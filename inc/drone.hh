@@ -8,6 +8,7 @@
 */
 
 #include "hexprism.hh"
+#include "scene_object.hh"
 #include "lacze_do_gnuplota.hh"
 
 #include <iostream>
@@ -16,7 +17,7 @@
 /*!
 * \brief Modeluje pojęcie dronu
 */
-class Drone: HexPrism, Cuboid {
+class Drone: public HexPrism, public SceneObject {
 
   private:
 
@@ -50,6 +51,11 @@ class Drone: HexPrism, Cuboid {
     */
     void CalcRotorGlobalCoords(const HexPrism &Rotor) const;
 
+    /*!
+    * \brief Obróć każdy z rotorów o pewien kąt w odpowiednim kierunku
+    */
+    void SpinRotors(double degrees);
+    
   public:
 
     /*!
@@ -61,11 +67,6 @@ class Drone: HexPrism, Cuboid {
     * \brief Zaplanuj ścieżkę przelotu drona
     */
     void PlanPath (double angle, double distance, std::vector<Vector3D> &PathPoints);
-
-    /*!
-    * \brief Obróć każdy z rotorów o pewien kąt w odpowiednim kierunku
-    */
-    void SpinRotors(double degrees);
 
     /*!
     * \brief Wykonaj pioniowy lot drona na pewną odległość
@@ -100,7 +101,7 @@ class Drone: HexPrism, Cuboid {
     /*!
     * \brief Tworzenie drona według brył wzorcowych jego elementów, współrzędnych położenia i kątu obrotu
     */ 
-    void Initiate(const std::string filenames[2], double pos_x, double pos_y, double pos_z, double angle);
+    void Initiate(double pos_x, double pos_y, double pos_z, double angle);
 
     /*!
     * \brief Wyświetl pozycję drona w globalnym układzie współrzędnych

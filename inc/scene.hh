@@ -11,10 +11,15 @@
 * \brief Modeluje pojecie sceny
 */
 #include "drone.hh"
+#include <memory>
+
+
 
 class Scene: Drone {
 
   private:
+
+
 
     /*!
     * \brief Kontener zawierający wszystkie używane drony
@@ -28,10 +33,11 @@ class Scene: Drone {
 
   public: 
 
+    std::list<std::shared_ptr<SceneObject>> ObjectList;
     /*!
     * \brief Dodaj nowego drona do sceny
     */
-    void AddDrone(Drone new_drone) {DroneArray.push_back(new_drone);};
+    void AddDrone(Drone new_drone) {DroneArray.push_back(new_drone); ObjectList.push_back(std::make_shared<Drone> (new_drone));};
 
     /*!
     * \brief Zwróć wskaźnik na drona, który jest obecnie aktywny
@@ -52,4 +58,6 @@ class Scene: Drone {
     * \brief Zwróć indeks aktywnego drona
     */
     int ReturnAtiveDroneNum() {return ActiveDrone;};
+
+    void AddObject(SceneObject new_object) {ObjectList.push_back(std::make_shared<SceneObject>(new_object));};
 };

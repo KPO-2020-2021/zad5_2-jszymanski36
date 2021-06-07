@@ -3,7 +3,7 @@
 #include "cuboid.hh"
 
 
-class SceneObject: public Cuboid {
+struct SceneObject: public Cuboid {
 
     public:
       

@@ -260,7 +260,7 @@ void Drone::SetCoordFiles(const std::string filenames[7]){
 * \param[in] scale_y - współrzędna y-owa położenia drona
 * \param[in] scale_z - współrzędna z-owa położenia drona
 */
-void Drone::Initiate(const std::string filenames[2], double pos_x, double pos_y, double pos_z, double angle){
+void Drone::Initiate(double pos_x, double pos_y, double pos_z, double angle){
 
   double TBody[SIZE] = {BODY_POS};
   double TR0[SIZE] = {ROTOR0_POS};
@@ -281,9 +281,9 @@ void Drone::Initiate(const std::string filenames[2], double pos_x, double pos_y,
   Rotor[2].SetPosition(VR2, 0);
   Rotor[3].SetPosition(VR3, 0);
 
-  Body.Initiate(filenames[0], BODY_SCALE);
+  Body.Initiate(BODY_SCALE);
   for(int i=0; i<4; i++){
-    Rotor[i].Initiate(filenames[1], ROTOR_SCALE);
+    Rotor[i].Initiate(ROTOR_SCALE);
   }
 }
 

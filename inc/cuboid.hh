@@ -26,7 +26,11 @@ class Cuboid: public Solid {
     */
     double Orientation;
 
+
+
   public:
+
+        static std::string TemplateFileName;
 
     /*!
     * \brief Przetłumacz współrzędne lokalne prostopadłościanu na współrzędne w układzie drona
@@ -41,5 +45,5 @@ class Cuboid: public Solid {
     /*!
     * \brief Tworzenie prostopadłościanu według bryły wzorcowej i skali 
     */
-    virtual void Initiate(std::string TemplateFile, double scale_x, double scale_y, double scale_z);
+    virtual void Initiate(double scale_x, double scale_y, double scale_z);
 };

@@ -8,6 +8,8 @@
 #include "../inc/matrix3x3.hh"
 #include <fstream> 
 
+std::string HexPrism::TemplateFileName;
+
 /*!
 * Przetłumaczanie danego punktu z układu lokalnego graniastosłupa do układu współrzędnych o poziom wyższego (w przykładu układu drona)
 * \param[in] Point - punkt w układzie lokalnym
@@ -35,9 +37,9 @@ Vector3D HexPrism::TransformToParentsCoords(const Vector3D &Point) const{
 *
 * \return 1 jeśli zostało to wykonane bez problemów, w przeciwnym razie 0
 */ 
-void HexPrism::Initiate(std::string TemplateFile, double scale_x, double scale_y, double scale_z){
+void HexPrism::Initiate(double scale_x, double scale_y, double scale_z){
   
-  std::ifstream Template (TemplateFile);
+  std::ifstream Template (TemplateFileName);
   std::ofstream Local (TakeFileName_LocalCoords());
   Vector3D point;
 

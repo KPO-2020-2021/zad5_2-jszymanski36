@@ -10,9 +10,29 @@
 solid.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/solid.hh
 
-/home/jakub/Documents/zad5_2-jszymanski36/inc/flat.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
+hexprism.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
 scene_object.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
+lacze_do_gnuplota.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/lacze_do_gnuplota.hh
+iostream
+-
+vector
+-
+
+/home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
+cuboid.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/cuboid.hh
+
+/home/jakub/Documents/zad5_2-jszymanski36/inc/lacze_do_gnuplota.hh
+string
+-
+list
+-
+vector
+-
 
 /home/jakub/Documents/zad5_2-jszymanski36/inc/matrix.hh
 vector.hh
@@ -23,6 +43,10 @@ iostream
 -
 cstdlib
 -
+
+/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
+vector3D.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh
 
 /home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
 cuboid.hh
@@ -50,9 +74,15 @@ math.h
 matrix.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/matrix.hh
 
-/home/jakub/Documents/zad5_2-jszymanski36/src/flat.cpp
-../inc/flat.hh
-/home/jakub/Documents/zad5_2-jszymanski36/inc/flat.hh
+/home/jakub/Documents/zad5_2-jszymanski36/src/drone.cpp
+../inc/drone.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
+../inc/matrix3x3.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
 fstream
+-
+cmath
+-
+unistd.h
 -
 

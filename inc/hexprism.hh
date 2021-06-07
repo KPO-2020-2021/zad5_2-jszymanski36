@@ -28,6 +28,9 @@ class HexPrism: public Solid {
 
   public:
 
+        static std::string TemplateFileName;
+
+
     /*!
     * \brief Przetłumacz współrzędne lokalne graniastosłupa na współrzędne w układzie drona
     */
@@ -46,6 +49,6 @@ class HexPrism: public Solid {
     /*!
     * \brief Tworzenie graniastosłupa według bryły wzorcowej i skali 
     */
-    void Initiate(std::string TemplateFile, double scale_x, double scale_y, double scale_z);
+    void Initiate(double scale_x, double scale_y, double scale_z);
 
 };

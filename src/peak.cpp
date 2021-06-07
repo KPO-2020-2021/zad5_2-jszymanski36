@@ -9,14 +9,14 @@ Peak::Peak(Vector3D scale, double pos_x, double pos_y, std::string templatefiles
 
   SetPosition(Pos, 0);
   SetFileNames(templatefiles[2], templatefiles[1]);
-  Initiate(templatefiles[0], scale[0], scale[1], scale [2]);
+  Initiate(scale[0], scale[1], scale [2]);
   CalcGlobalCoords();
 }
 
 
-void Peak::Initiate(std::string TemplateFile, double scale_x, double scale_y, double scale_z){
+void Peak::Initiate(double scale_x, double scale_y, double scale_z){
   
-  std::ifstream Template (TemplateFile);
+  std::ifstream Template (Cuboid::TemplateFileName);
   std::ofstream Local (TakeFileName_LocalCoords());
   Vector3D point;
   double Tz[SIZE] = {0, 0, 0.5 * scale_z};

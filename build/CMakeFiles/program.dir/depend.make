@@ -16,6 +16,7 @@ CMakeFiles/program.dir/src/drone.cpp.o: ../inc/hexprism.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/matrix.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/matrix3x3.hh
+CMakeFiles/program.dir/src/drone.cpp.o: ../inc/scene_object.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/size.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/solid.hh
 CMakeFiles/program.dir/src/drone.cpp.o: ../inc/vector.hh

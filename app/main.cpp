@@ -96,17 +96,19 @@ int main()
   char choice;              // wybór opcji przez użytkownika
   double angle, distance;   // kąt i odległość wybierane przez użytkownika
 
-  const std::string TemplateFileNames[2] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WZORCOWEGO_GRANIASTOSLUPA6};
+  Cuboid::TemplateFileName = PLIK_WZORCOWEGO_SZESCIANU;
+  HexPrism::TemplateFileName = PLIK_WZORCOWEGO_GRANIASTOSLUPA6;
+
   const std::string FileNames1[7] = {PLIK_ROBOCZY__DRON_KORPUS, PLIK_WLASCIWY__DRON1_KORPUS, PLIK_ROBOCZY__DRON_ROTOR, PLIK_WLASCIWY__DRON1_ROTOR1, PLIK_WLASCIWY__DRON1_ROTOR2, PLIK_WLASCIWY__DRON1_ROTOR3, PLIK_WLASCIWY__DRON1_ROTOR4};
 
   drone1.SetCoordFiles(FileNames1);
-  drone1.Initiate(TemplateFileNames, DRONE1_POS, 0);
+  drone1.Initiate(DRONE1_POS, 0);
   drone1.CalcDroneGlobalCoords();
 
 
   const std::string FileNames2[7] = {PLIK_ROBOCZY__DRON_KORPUS, PLIK_WLASCIWY__DRON2_KORPUS, PLIK_ROBOCZY__DRON_ROTOR, PLIK_WLASCIWY__DRON2_ROTOR1, PLIK_WLASCIWY__DRON2_ROTOR2, PLIK_WLASCIWY__DRON2_ROTOR3, PLIK_WLASCIWY__DRON2_ROTOR4};
   drone2.SetCoordFiles(FileNames2);
-  drone2.Initiate(TemplateFileNames, DRONE2_POS, 30);
+  drone2.Initiate(DRONE2_POS, 30);
   drone2.CalcDroneGlobalCoords();
 
 
@@ -127,6 +129,7 @@ int main()
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR2);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR3);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR4);
+  
   Lacze.DodajNazwePliku(PLIK_WLASCIWY_GRAN);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY_SZCZYT);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY_PLASKOWYZ);
@@ -142,16 +145,19 @@ int main()
        Vector3D Sc1(T1);
        std::string filenames1[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_GRAN, PLIK_ROBOCZY_GRAN};
        Slope gran(Sc1, 100, 90, filenames1);
+       scene.AddObject(gran);
 
        double T2[SIZE] = {10,10,60};
        Vector3D Sc2(T2);
        std::string filenames2[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_SZCZYT, PLIK_ROBOCZY_SZCZYT};
        Peak szczyt(Sc2, 100, 20, filenames2);
+       scene.AddObject(szczyt);
 
        double T3[SIZE] = {50, 60, 15};
        Vector3D Sc3(T3);
        std::string filenames3[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_PLASKOWYZ, PLIK_ROBOCZY_PLASKOWYZ};
-       Flat plaskowyz(Sc3, 150, 105, filenames3);        
+       Flat plaskowyz(Sc3, 150, 105, filenames3);
+       scene.AddObject(plaskowyz);        
 
 
   Lacze.UstawRotacjeXZ(64,65); 

@@ -41,6 +41,8 @@ solid.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
 hexprism.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
+scene_object.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
 lacze_do_gnuplota.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/lacze_do_gnuplota.hh
 iostream
@@ -85,6 +87,8 @@ scene_object.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/scene.hh
 drone.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
+memory
+-
 
 /home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
 cuboid.hh
