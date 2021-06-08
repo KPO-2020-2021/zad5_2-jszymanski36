@@ -62,4 +62,5 @@ class Solid {
     * \brief Ustalanie nazw plików zawierających wspólrzędne danej bryły
     */
     void SetFileNames(std::string local, std::string global) {FileName_GlobalCoords = global; FileName_LocalCoords = local;};   
+
 };

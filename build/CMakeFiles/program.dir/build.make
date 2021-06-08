@@ -135,9 +135,22 @@ CMakeFiles/program.dir/src/vector3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/vector3D.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/src/vector3D.cpp -o CMakeFiles/program.dir/src/vector3D.cpp.s
 
+CMakeFiles/program.dir/src/scene.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/scene.cpp.o: ../src/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/program.dir/src/scene.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/scene.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp
+
+CMakeFiles/program.dir/src/scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp > CMakeFiles/program.dir/src/scene.cpp.i
+
+CMakeFiles/program.dir/src/scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp -o CMakeFiles/program.dir/src/scene.cpp.s
+
 CMakeFiles/program.dir/src/peak.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/peak.cpp.o: ../src/peak.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/program.dir/src/peak.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/program.dir/src/peak.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/peak.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/peak.cpp
 
 CMakeFiles/program.dir/src/peak.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/program.dir/src/peak.cpp.s: cmake_force
 
 CMakeFiles/program.dir/src/scene_object.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../src/scene_object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/program.dir/src/scene_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/program.dir/src/scene_object.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/scene_object.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/scene_object.cpp
 
 CMakeFiles/program.dir/src/scene_object.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/program.dir/src/scene_object.cpp.s: cmake_force
 
 CMakeFiles/program.dir/src/slope.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/slope.cpp.o: ../src/slope.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/program.dir/src/slope.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/program.dir/src/slope.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/slope.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/slope.cpp
 
 CMakeFiles/program.dir/src/slope.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/program.dir/src/slope.cpp.s: cmake_force
 
 CMakeFiles/program.dir/src/flat.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/flat.cpp.o: ../src/flat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/program.dir/src/flat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/program.dir/src/flat.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/flat.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/flat.cpp
 
 CMakeFiles/program.dir/src/flat.cpp.i: cmake_force
@@ -193,6 +206,7 @@ program: CMakeFiles/program.dir/src/drone.cpp.o
 program: CMakeFiles/program.dir/src/hexprism.cpp.o
 program: CMakeFiles/program.dir/src/matrix3x3.cpp.o
 program: CMakeFiles/program.dir/src/vector3D.cpp.o
+program: CMakeFiles/program.dir/src/scene.cpp.o
 program: CMakeFiles/program.dir/src/peak.cpp.o
 program: CMakeFiles/program.dir/src/scene_object.cpp.o
 program: CMakeFiles/program.dir/src/slope.cpp.o

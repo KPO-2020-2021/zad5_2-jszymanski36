@@ -107,4 +107,6 @@ class Drone: public HexPrism, public SceneObject {
     * \brief Wyświetl pozycję drona w globalnym układzie współrzędnych
     */
     Vector3D ReturnPosition() {return Position;};
+
+    virtual std::string ReturnType() {return "Dron";};
 };

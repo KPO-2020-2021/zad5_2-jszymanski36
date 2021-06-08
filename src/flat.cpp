@@ -2,13 +2,13 @@
 #include <fstream> 
 
 
-Flat::Flat(Vector3D scale, double pos_x, double pos_y, std::string templatefiles[3]){
+Flat::Flat(Vector3D scale, double pos_x, double pos_y, std::string localfile, std::string globalfile){
   
   double TPos[SIZE] = {pos_x, pos_y, 0};
   Vector3D Pos(TPos);
 
   SetPosition(Pos, 0);
-  SetFileNames(templatefiles[2], templatefiles[1]);
+  SetFileNames(localfile, globalfile);
   Initiate(scale[0], scale[1], scale [2]);
   CalcGlobalCoords();
 }

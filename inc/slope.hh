@@ -4,10 +4,13 @@
 
 class Slope: public SceneObject{
 
+  private:
+
+    virtual void Initiate(double scale_x, double scale_y, double scale_z) override;
 
   public:
 
-    Slope(Vector3D scale, double pos_x, double pos_y,  std::string templatefiles[3]);
+    Slope(Vector3D scale, double pos_x, double pos_y,  std::string localfile, std::string globalfile);
 
-    virtual void Initiate(double scale_x, double scale_y, double scale_z) override;
+    virtual std::string ReturnType() {return "Gora z grania";};
 };

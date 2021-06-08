@@ -44,6 +44,7 @@ set(SOURCES          # All .cpp files in src/
     src/hexprism.cpp
     src/matrix3x3.cpp
     src/vector3D.cpp
+    src/scene.cpp
     src/peak.cpp
     src/scene_object.cpp
     src/slope.cpp

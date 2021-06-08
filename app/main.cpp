@@ -80,6 +80,8 @@ void PrintMenu(){
 
        std::cout << "a - wybierz aktywnego drona" << std::endl;
        std::cout << "p - zadaj parametry przelotu" << std::endl;
+       std::cout << "d - dodaj element powierzchni" << std::endl;
+       std::cout << "u - usun element powierzchni" << std::endl; 
        std::cout << "m - wyswietl menu" << std::endl;
        std::cout << "r - wykonaj ruch po okręgu o zadanym promieniu" << std::endl << std::endl;
        std::cout << "k - koniec działania programu" << std::endl;
@@ -95,6 +97,7 @@ int main()
 
   char choice;              // wybór opcji przez użytkownika
   double angle, distance;   // kąt i odległość wybierane przez użytkownika
+  int index;
 
   Cuboid::TemplateFileName = PLIK_WZORCOWEGO_SZESCIANU;
   HexPrism::TemplateFileName = PLIK_WZORCOWEGO_GRANIASTOSLUPA6;
@@ -130,9 +133,9 @@ int main()
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR3);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR4);
   
-  Lacze.DodajNazwePliku(PLIK_WLASCIWY_GRAN);
+/*   Lacze.DodajNazwePliku(PLIK_WLASCIWY_GRAN);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY_SZCZYT);
-  Lacze.DodajNazwePliku(PLIK_WLASCIWY_PLASKOWYZ);
+  Lacze.DodajNazwePliku(PLIK_WLASCIWY_PLASKOWYZ); */
 
   Lacze.ZmienTrybRys(PzG::TR_3D);
   Lacze.Inicjalizuj();
@@ -143,21 +146,15 @@ int main()
 
        double T1[SIZE] = {20, 80, 60};
        Vector3D Sc1(T1);
-       std::string filenames1[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_GRAN, PLIK_ROBOCZY_GRAN};
-       Slope gran(Sc1, 100, 90, filenames1);
-       scene.AddObject(gran);
+       scene.AddObject(Sc1, 100, 90, 2, Lacze);
 
        double T2[SIZE] = {10,10,60};
        Vector3D Sc2(T2);
-       std::string filenames2[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_SZCZYT, PLIK_ROBOCZY_SZCZYT};
-       Peak szczyt(Sc2, 100, 20, filenames2);
-       scene.AddObject(szczyt);
+       scene.AddObject(Sc2, 100, 20, 1, Lacze);
 
        double T3[SIZE] = {50, 60, 15};
        Vector3D Sc3(T3);
-       std::string filenames3[3] = {PLIK_WZORCOWEGO_SZESCIANU, PLIK_WLASCIWY_PLASKOWYZ, PLIK_ROBOCZY_PLASKOWYZ};
-       Flat plaskowyz(Sc3, 150, 105, filenames3);
-       scene.AddObject(plaskowyz);        
+       scene.AddObject(Sc3, 150, 105, 3, Lacze);
 
 
   Lacze.UstawRotacjeXZ(64,65); 
@@ -231,6 +228,42 @@ int main()
                             
                             std::cout << "Dron wylądował ..." << std::endl << std::endl;
                             std::cout << "Polozenie drona aktywnego: " << (*dronePtr).ReturnPosition();
+                     break;
+
+                     case 'd':{
+                            Vector3D scale;
+                            double pos_x, pos_y;
+                            std::cout << "Wybierz rodzaj powierzchniowego elementu: " << std::endl;
+                            std::cout << "1 - Gora z ostrym szczytem" << std::endl;
+                            std::cout << "2 - Gora z grania" << std::endl;
+                            std::cout << "3 - Plaskowyz" << std::endl << std::endl;
+                            std::cout << "Wprowadx numer typu elementu >";
+                            std::cin >> index;
+
+                            std::cout << std::endl << "Podaj skale wzdluz kolejnych osi OX, OY, OZ." << std::endl;
+                            std::cout << "Wprowadz skale: OX, OY, OZ > ";
+                            std::cin >> scale;
+                            
+                            std::cout << std::endl << "Podaj wspolrzedne srodka podstawy x, y." << std::endl;
+                            std::cout << "Wprowadz wspolrzedne: x, y >";
+                            std::cin >> pos_x >> pos_y;
+
+                            scene.AddObject(scale, pos_x, pos_y, index, Lacze);
+                            Lacze.Rysuj();
+                            std::cout << std::endl << "Element zostal dodany do sceny." << std::endl;
+                     }
+                     break;
+
+                     case 'u':
+                            if(scene.PrintObjects()){
+                                   std::cout << std::endl << "Podaj numer elementu >";
+                                   std::cin >> index;
+                                   scene.DeleteObject(index, Lacze);
+                                   Lacze.Rysuj();
+                                   std::cout << "Element zostal usuniety" << std::endl;
+                            } else {
+                                   std::cout << std::endl << "Brak elementów na powierzchni!" << std::endl;
+                            }
                      break;
 
                      default:

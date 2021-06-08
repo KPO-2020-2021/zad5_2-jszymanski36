@@ -186,7 +186,7 @@ CMakeFiles/main.dir/all: CMakeFiles/program.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -748,12 +748,12 @@ CMakeFiles/ExperimentalStart.dir/clean:
 CMakeFiles/program.dir/all:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/depend
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13 "Built target program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14 "Built target program"
 .PHONY : CMakeFiles/program.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/program.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/program.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 0
 .PHONY : CMakeFiles/program.dir/rule
@@ -969,7 +969,7 @@ tests/CMakeFiles/fulltest.dir/all: tests/CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/fulltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fulltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/fulltest.dir/rule
@@ -1018,12 +1018,12 @@ tests/CMakeFiles/coverage.dir/clean:
 tests/CMakeFiles/unit_tests.dir/all: CMakeFiles/program.dir/all
 	$(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/depend
 	$(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=14,15 "Built target unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=15,16 "Built target unit_tests"
 .PHONY : tests/CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/unit_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/unit_tests.dir/rule

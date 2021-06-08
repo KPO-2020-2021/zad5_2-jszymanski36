@@ -63,11 +63,33 @@ CMakeFiles/program.dir/src/peak.cpp.o
  /home/jakub/Documents/zad5_2-jszymanski36/inc/vector.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh
  /home/jakub/Documents/zad5_2-jszymanski36/src/peak.cpp
-CMakeFiles/program.dir/src/scene_object.cpp.o
+CMakeFiles/program.dir/src/scene.cpp.o
  /home/jakub/Documents/zad5_2-jszymanski36/inc/cuboid.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/flat.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/lacze_do_gnuplota.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/matrix.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/peak.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/scene.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/size.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/slope.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/solid.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/vector.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp
+CMakeFiles/program.dir/src/scene_object.cpp.o
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/cuboid.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/flat.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/lacze_do_gnuplota.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/matrix.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/peak.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/scene_object.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/size.hh
+ /home/jakub/Documents/zad5_2-jszymanski36/inc/slope.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/solid.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/vector.hh
  /home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh

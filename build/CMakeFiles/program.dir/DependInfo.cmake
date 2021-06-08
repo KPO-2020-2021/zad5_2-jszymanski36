@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jakub/Documents/zad5_2-jszymanski36/src/lacze_do_gnuplota.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/src/matrix3x3.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/matrix3x3.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/src/peak.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/peak.cpp.o"
+  "/home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/scene.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/src/scene_object.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/scene_object.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/src/slope.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/slope.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/src/vector3D.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/vector3D.cpp.o"

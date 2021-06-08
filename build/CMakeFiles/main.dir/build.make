@@ -82,6 +82,7 @@ main_EXTERNAL_OBJECTS = \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/hexprism.cpp.o" \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/matrix3x3.cpp.o" \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/vector3D.cpp.o" \
+"/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/scene.cpp.o" \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/peak.cpp.o" \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/scene_object.cpp.o" \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/slope.cpp.o" \
@@ -94,6 +95,7 @@ main: CMakeFiles/program.dir/src/drone.cpp.o
 main: CMakeFiles/program.dir/src/hexprism.cpp.o
 main: CMakeFiles/program.dir/src/matrix3x3.cpp.o
 main: CMakeFiles/program.dir/src/vector3D.cpp.o
+main: CMakeFiles/program.dir/src/scene.cpp.o
 main: CMakeFiles/program.dir/src/peak.cpp.o
 main: CMakeFiles/program.dir/src/scene_object.cpp.o
 main: CMakeFiles/program.dir/src/slope.cpp.o

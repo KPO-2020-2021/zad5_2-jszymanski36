@@ -46,4 +46,6 @@ class Cuboid: public Solid {
     * \brief Tworzenie prostopadłościanu według bryły wzorcowej i skali 
     */
     virtual void Initiate(double scale_x, double scale_y, double scale_z);
+
+    Vector3D ReturnPosition() {return Position;};
 };

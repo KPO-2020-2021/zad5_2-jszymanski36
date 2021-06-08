@@ -19,8 +19,6 @@ class Scene: Drone {
 
   private:
 
-
-
     /*!
     * \brief Kontener zawierający wszystkie używane drony
     */
@@ -31,9 +29,11 @@ class Scene: Drone {
     */
     unsigned int ActiveDrone;
 
+    std::list<std::shared_ptr<SceneObject>> ObjectList;
+
   public: 
 
-    std::list<std::shared_ptr<SceneObject>> ObjectList;
+
     /*!
     * \brief Dodaj nowego drona do sceny
     */
@@ -59,5 +59,11 @@ class Scene: Drone {
     */
     int ReturnAtiveDroneNum() {return ActiveDrone;};
 
-    void AddObject(SceneObject new_object) {ObjectList.push_back(std::make_shared<SceneObject>(new_object));};
+    void AddObject(Vector3D scale, double pos_x, double pos_y, int type, PzG::LaczeDoGNUPlota &Lacze);
+
+    void DeleteObject(int index, PzG::LaczeDoGNUPlota &Lacze);
+
+    bool PrintObjects();
+
+    ~Scene();
 };

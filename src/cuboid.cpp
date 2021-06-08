@@ -7,6 +7,7 @@
 #include "../inc/cuboid.hh"
 #include "../inc/matrix3x3.hh"
 #include <fstream> 
+
 std::string Cuboid::TemplateFileName;
 /*!
 * Przetłumaczanie danego punktu z układu lokalnego prostopadłościanu do układu współrzędnych o poziom wyższego (w przykładu układu drona)

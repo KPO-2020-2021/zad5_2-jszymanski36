@@ -63,10 +63,32 @@ CMakeFiles/program.dir/src/peak.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/peak.cpp.o: ../inc/vector3D.hh
 CMakeFiles/program.dir/src/peak.cpp.o: ../src/peak.cpp
 
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/cuboid.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/drone.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/flat.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/hexprism.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/peak.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/scene.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/scene_object.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/size.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/slope.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/solid.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/vector3D.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../src/scene.cpp
+
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/cuboid.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/drone.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/flat.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/hexprism.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/peak.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/scene_object.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/size.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/slope.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/solid.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/vector3D.hh

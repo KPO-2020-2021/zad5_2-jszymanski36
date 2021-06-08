@@ -36,6 +36,11 @@
 },
 {
   "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/scene.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp",
+  "file": "/home/jakub/Documents/zad5_2-jszymanski36/src/scene.cpp"
+},
+{
+  "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/peak.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/src/peak.cpp",
   "file": "/home/jakub/Documents/zad5_2-jszymanski36/src/peak.cpp"
 },

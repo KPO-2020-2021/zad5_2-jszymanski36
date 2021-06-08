@@ -1,4 +1,8 @@
 #include "../inc/scene_object.hh"
+#include "../inc/slope.hh"
+#include "../inc/peak.hh"
+#include "../inc/flat.hh"
+#include "../inc/drone.hh"
 #include <fstream> 
 
 void SceneObject::CalcGlobalCoords(){
@@ -20,4 +24,12 @@ void SceneObject::CalcGlobalCoords(){
     global << std::endl;
   }
 }
+
+/* SceneObject::~SceneObject(){
+  if(ReturnType() != "Dron"){
+    remove(TakeFileName_LocalCoords().c_str());
+    remove(TakeFileName_GlobalCoords().c_str());
+  }
+  std::cout << "a" << std::endl;
+} */
 
