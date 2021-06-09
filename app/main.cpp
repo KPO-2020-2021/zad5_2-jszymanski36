@@ -22,9 +22,6 @@
 
 #define PLIK_ROBOCZY__DRON_KORPUS  "../datasets/PlikRoboczy_Dron_Korpus.dat"
 #define PLIK_ROBOCZY__DRON_ROTOR  "../datasets/PlikRoboczy_Dron_Rotor.dat"
-#define PLIK_ROBOCZY_SZCZYT        "../datasets/PlikRoboczy_Szczyt.dat"
-#define PLIK_ROBOCZY_GRAN          "../datasets/PlikRoboczy_Gran.dat"
-#define PLIK_ROBOCZY_PLASKOWYZ     "../datasets/PlikRoboczy_Plaskowyz.dat"
 
 #define PLIK_WLASCIWY__DRON1_KORPUS  "../datasets/PlikWlasciwy_Dron1_Korpus.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR1  "../datasets/PlikWlasciwy_Dron1_Rotor1.dat"
@@ -37,10 +34,6 @@
 #define PLIK_WLASCIWY__DRON2_ROTOR2  "../datasets/PlikWlasciwy_Dron2_Rotor2.dat"
 #define PLIK_WLASCIWY__DRON2_ROTOR3  "../datasets/PlikWlasciwy_Dron2_Rotor3.dat"
 #define PLIK_WLASCIWY__DRON2_ROTOR4  "../datasets/PlikWlasciwy_Dron2_Rotor4.dat"
-
-#define PLIK_WLASCIWY_SZCZYT        "../datasets/PlikWlasciwy_Szczyt.dat"
-#define PLIK_WLASCIWY_GRAN          "../datasets/PlikWlasciwyGran.dat"
-#define PLIK_WLASCIWY_PLASKOWYZ     "../datasets/PlikWlasciwy_Plaskowyz.dat"
 
 #define PLIK_TRASY_PRZELOTU "../datasets/trasa_przelotu.dat"
 
@@ -132,10 +125,6 @@ int main()
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR2);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR3);
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON2_ROTOR4);
-  
-/*   Lacze.DodajNazwePliku(PLIK_WLASCIWY_GRAN);
-  Lacze.DodajNazwePliku(PLIK_WLASCIWY_SZCZYT);
-  Lacze.DodajNazwePliku(PLIK_WLASCIWY_PLASKOWYZ); */
 
   Lacze.ZmienTrybRys(PzG::TR_3D);
   Lacze.Inicjalizuj();
@@ -144,17 +133,17 @@ int main()
   Lacze.UstawZakresY(0, 200);
   Lacze.UstawZakresZ(0, 120);
 
-       double T1[SIZE] = {20, 80, 60};
-       Vector3D Sc1(T1);
-       scene.AddObject(Sc1, 100, 90, 2, Lacze);
-
-       double T2[SIZE] = {10,10,60};
+       double T2[SIZE] = {10,10,60};             
        Vector3D Sc2(T2);
-       scene.AddObject(Sc2, 100, 20, 1, Lacze);
+       scene.AddObject(Sc2, 100, 20, 60, 1, Lacze);  //dodaj gore ze szczytem
+
+       double T1[SIZE] = {20, 80, 60};           
+       Vector3D Sc1(T1);
+       scene.AddObject(Sc1, 100, 90, 0, 2, Lacze);  //dodaj gore z grania
 
        double T3[SIZE] = {50, 60, 15};
        Vector3D Sc3(T3);
-       scene.AddObject(Sc3, 150, 105, 3, Lacze);
+       scene.AddObject(Sc3, 150, 105, 20, 3, Lacze); //dodaj plaskowyz
 
 
   Lacze.UstawRotacjeXZ(64,65); 
@@ -248,7 +237,11 @@ int main()
                             std::cout << "Wprowadz wspolrzedne: x, y >";
                             std::cin >> pos_x >> pos_y;
 
-                            scene.AddObject(scale, pos_x, pos_y, index, Lacze);
+                            std::cout << std::endl << "Podaj orientacje względem osi OZ." << std::endl;
+                            std::cout << "Wprowadz kat w stopniach > ";
+                            std::cin >> angle;
+
+                            scene.AddObject(scale, pos_x, pos_y, angle, index, Lacze);
                             Lacze.Rysuj();
                             std::cout << std::endl << "Element zostal dodany do sceny." << std::endl;
                      }

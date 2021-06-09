@@ -28,8 +28,10 @@ class HexPrism: public Solid {
 
   public:
 
-        static std::string TemplateFileName;
-
+    /*!
+    * \brief Nazwa pliku ze współrzędnymi wzorcowymi graniastosłupa sześciokątnego
+    */
+    static std::string TemplateFileName;
 
     /*!
     * \brief Przetłumacz współrzędne lokalne graniastosłupa na współrzędne w układzie drona

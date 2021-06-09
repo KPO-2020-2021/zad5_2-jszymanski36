@@ -8,6 +8,9 @@
 #include "../inc/matrix3x3.hh"
 #include <fstream> 
 
+/*!
+* Nazwa pliku ze współrzędnymi wzorcowymi graniastosłupa sześciokątnego
+*/
 std::string HexPrism::TemplateFileName;
 
 /*!

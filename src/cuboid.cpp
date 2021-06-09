@@ -8,7 +8,11 @@
 #include "../inc/matrix3x3.hh"
 #include <fstream> 
 
+/*!
+* Nazwa pliku ze współrzędnymi wzorcowymi sześcianu
+*/
 std::string Cuboid::TemplateFileName;
+
 /*!
 * Przetłumaczanie danego punktu z układu lokalnego prostopadłościanu do układu współrzędnych o poziom wyższego (w przykładu układu drona)
 * \param[in] Point - punkt w układzie lokalnym

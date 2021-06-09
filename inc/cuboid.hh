@@ -30,7 +30,10 @@ class Cuboid: public Solid {
 
   public:
 
-        static std::string TemplateFileName;
+    /*!
+    * \brief Nazwa pliku ze współrzędnymi wzorcowymi sześcianu
+    */
+    static std::string TemplateFileName;
 
     /*!
     * \brief Przetłumacz współrzędne lokalne prostopadłościanu na współrzędne w układzie drona
@@ -47,5 +50,8 @@ class Cuboid: public Solid {
     */
     virtual void Initiate(double scale_x, double scale_y, double scale_z);
 
+    /*!
+    * \brief Zwroc pozycje prostopadloscianu
+    */
     Vector3D ReturnPosition() {return Position;};
 };

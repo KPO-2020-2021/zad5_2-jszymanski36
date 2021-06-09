@@ -1,0 +1,276 @@
+\hypertarget{lacze__do__gnuplota_8cpp}{}\doxysection{/home/jakub/\+Documents/zad5\+\_\+2-\/jszymanski36/src/lacze\+\_\+do\+\_\+gnuplota.cpp File Reference}
+\label{lacze__do__gnuplota_8cpp}\index{/home/jakub/Documents/zad5\_2-\/jszymanski36/src/lacze\_do\_gnuplota.cpp@{/home/jakub/Documents/zad5\_2-\/jszymanski36/src/lacze\_do\_gnuplota.cpp}}
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}lacze\+\_\+do\+\_\+gnuplota.\+hh\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Pz\+G\+::\+Atrybuty\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji będący atrybutami rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Pz\+G\+::\+Wektor2f}}
+\begin{DoxyCompactList}\small\item\em Klasa pomocnicza, pozwala modelować wektor dwuwymiarowy. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji o rysowanych punktach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a08dcd9b8e0e589e86d85ee27a70a602e}\label{lacze__do__gnuplota_8cpp_a08dcd9b8e0e589e86d85ee27a70a602e}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+A\+\_\+\+S\+Z\+E\+R\+O\+K\+O\+SC}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a519eedd673781586ee31ff603b8ba104}\label{lacze__do__gnuplota_8cpp_a519eedd673781586ee31ff603b8ba104}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+Y\+\_\+\+K\+O\+L\+OR}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a26c7b575f64017fa2e44dcfde0a8ab93}\label{lacze__do__gnuplota_8cpp_a26c7b575f64017fa2e44dcfde0a8ab93}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+Y\+\_\+\+S\+T\+YL}~7
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_ac00bfb46347d26fdc58568fe1ab5fa5b}\label{lacze__do__gnuplota_8cpp_ac00bfb46347d26fdc58568fe1ab5fa5b}} 
+\#define {\bfseries S\+T\+D\+IN}~0
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a8875037d0772a4fc34516f1e03d7e238}\label{lacze__do__gnuplota_8cpp_a8875037d0772a4fc34516f1e03d7e238}} 
+\#define {\bfseries S\+T\+D\+O\+UT}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a2b501945c8d86114fcf6420cc1ee6306}\label{lacze__do__gnuplota_8cpp_a2b501945c8d86114fcf6420cc1ee6306}} 
+\#define {\bfseries R\+O\+Z\+\_\+\+L\+I\+N\+II}~120
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef list$<$ Info\+Punkty\+Do\+Rysowania $>$ \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}{Pz\+G\+::\+Typ\+Lista\+Punktow}}
+\begin{DoxyCompactList}\small\item\em Skrócona nazwa typu listy punktów, które mają być rysowane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{lacze__do__gnuplota_8cpp_ae1aad0c681853d7e47da4cdfccefc102}{Pz\+G\+::\+Czy\+Jest\+Plik}} (char const $\ast$s\+Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lacze__do__gnuplota_8cpp_aa010184f31b26bb561b42f22438b821e}{Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Plikow}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Nazw, const list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Konca, std\+::string \&Polecenie, char const $\ast$$\ast$ww\+Sep)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a7d2a85ab24d848d5c8b7bca57688df93}{Pz\+G\+::operator$>$$>$}} (istream \&Strm\+We, Wektor2f \&Wspolrz)
+\begin{DoxyCompactList}\small\item\em Wczytuje wartości współrzędnych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a169c311f0e0b6ffadcd44e91e749f72d}{Pz\+G\+::\+Wczytaj\+Liste\+Roznych\+Punktow}} (const char $\ast$Nazwa\+Pliku, Typ\+Lista\+Punktow \&Lista\+Pkt, int Kolor, int Styl, const char $\ast$s\+Etykieta)
+\begin{DoxyCompactList}\small\item\em Wczytuje z pliku listę punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lacze__do__gnuplota_8cpp_ae6b9705e199ad695b61b4e902eaf0d6c}{Pz\+G\+::\+Dopisz\+Ustawienia\+Etykiet}} (const Typ\+Lista\+Punktow \&Lista\+Pkt, std\+::string \&Comm)
+\begin{DoxyCompactList}\small\item\em Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a85d3a77f67c2724ba3675bc3ef05eb81}{Pz\+G\+::\+Dopisz\+Rysowanie\+Punktow\+Z\+Listy}} (Typ\+Lista\+Punktow \&Lista\+Pkt, std\+::string \&Comm, const char $\ast$Sep)
+\begin{DoxyCompactList}\small\item\em Dopisuje do polecenia rysowania wpisy z nazwami plików, w których są współrzędne punktów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a7227cb39c785b1c746b6bb5515c0b781}{Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Roznych\+Punktow}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Nazw, list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Konca, list$<$ Info\+Punkty\+Do\+Rysowania $>$ \&Lista\+Punktow)
+\begin{DoxyCompactList}\small\item\em Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a3927f83244df8a7245e105150a9fb3b2}{Pz\+G\+::\+Usun\+Ostatnia\+Nazwe\+Pliku}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$ \&Lista)
+\begin{DoxyCompactList}\small\item\em Usuwa ostatnia nazwę pliku z listy plików do rysowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ostatnia modyfikacja\+: 2020.\+06.\+07 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}\label{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!TypListaPunktow@{TypListaPunktow}}
+\index{TypListaPunktow@{TypListaPunktow}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{TypListaPunktow}{TypListaPunktow}}
+{\footnotesize\ttfamily typedef list$<$Info\+Punkty\+Do\+Rysowania$>$ \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}{Pz\+G\+::\+Typ\+Lista\+Punktow}}}
+
+
+
+Skrócona nazwa typu listy punktów, które mają być rysowane. 
+
+Jest to skrócona nazwa typu listy punktów, które mają być rysowane. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_ae1aad0c681853d7e47da4cdfccefc102}\label{lacze__do__gnuplota_8cpp_ae1aad0c681853d7e47da4cdfccefc102}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!CzyJestPlik@{CzyJestPlik}}
+\index{CzyJestPlik@{CzyJestPlik}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{CzyJestPlik()}{CzyJestPlik()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Czy\+Jest\+Plik (\begin{DoxyParamCaption}\item[{char const $\ast$}]{s\+Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku. 
+
+Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku i może być otwarty od odczytu. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s\+Nazwa\+Pliku} & -\/ nazwa pliku, którego istnienie ma być sprawdzone. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ plik istnieje na dysku i może być otwarty do odczytu. \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a85d3a77f67c2724ba3675bc3ef05eb81}\label{lacze__do__gnuplota_8cpp_a85d3a77f67c2724ba3675bc3ef05eb81}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!DopiszRysowaniePunktowZListy@{DopiszRysowaniePunktowZListy}}
+\index{DopiszRysowaniePunktowZListy@{DopiszRysowaniePunktowZListy}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowaniePunktowZListy()}{DopiszRysowaniePunktowZListy()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Rysowanie\+Punktow\+Z\+Listy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{std\+::string \&}]{Comm,  }\item[{const char $\ast$}]{Sep }\end{DoxyParamCaption})}
+
+
+
+Dopisuje do polecenia rysowania wpisy z nazwami plików, w których są współrzędne punktów. 
+
+Dopisuje do polecenia rysowania dla {\ttfamily gnuplota} wpisy z nazwami plików, w których są współrzędne punktów. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista\+Pkt} & -\/ lista punktów, które mają zostać narysowane, \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Comm} & -\/ tworzone polecenie dla {\ttfamily gnuplota}, w którym mają pojawić się wpisy z nazwami plików z danymi punktów do rysowania. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Sep} & -\/ wskaźnik na separator, jaki ma zostać użyty w liście wpisów tworzonego polecenia dla gnuplota. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ lista punktów nie jest pusta i wpisy zostały dodane. \\
+\hline
+{\em false} & -\/ lista punktów jest pusta, tym samym wpisy nie zostały dodane. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_aa010184f31b26bb561b42f22438b821e}\label{lacze__do__gnuplota_8cpp_aa010184f31b26bb561b42f22438b821e}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!DopiszRysowanieZPlikow@{DopiszRysowanieZPlikow}}
+\index{DopiszRysowanieZPlikow@{DopiszRysowanieZPlikow}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowanieZPlikow()}{DopiszRysowanieZPlikow()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Plikow (\begin{DoxyParamCaption}\item[{list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&}]{Iter\+Nazw,  }\item[{const list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&}]{Iter\+Konca,  }\item[{std\+::string \&}]{Polecenie,  }\item[{char const $\ast$$\ast$}]{ww\+Sep }\end{DoxyParamCaption})}
+
+
+
+Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. 
+
+Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em Iter\+Nazw} & -\/ iterator listy nazw plików, od miejsca wkazywanego przez iterator rozpoczyna się dopisywanie wpisów rysowania z wykorzystaniem danych zawartych w plikach. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Iter\+Konca} & -\/ itrator końca, który wyznacza miejsce zakończenia dopisywania wpisów rysowania z plików. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Polecenie} & -\/ zawartość polecenia dla gnuplota, do którego dopisywane są wpisy rysowania z poszczególnych plików. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ww\+Sep} & -\/ pośredni wskaźnik na separator wpisów. Po dodaniu pierwszego wpisu separator jest zmieniany na ciąg \char`\"{}, \char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ operacja powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a7227cb39c785b1c746b6bb5515c0b781}\label{lacze__do__gnuplota_8cpp_a7227cb39c785b1c746b6bb5515c0b781}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!DopiszRysowanieZRoznychPunktow@{DopiszRysowanieZRoznychPunktow}}
+\index{DopiszRysowanieZRoznychPunktow@{DopiszRysowanieZRoznychPunktow}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowanieZRoznychPunktow()}{DopiszRysowanieZRoznychPunktow()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Roznych\+Punktow (\begin{DoxyParamCaption}\item[{list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&}]{Iter\+Nazw,  }\item[{list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&}]{Iter\+Konca,  }\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} $>$ \&}]{Lista\+Punktow }\end{DoxyParamCaption})}
+
+
+
+Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach. 
+
+Dopisuje do listy punktów, które mają być rysowane, punkty traktowane jako niejednorodne, a więc mogące mieć różne rozmiary. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Iter\+Nazw} & -\/ iterator nazw plików z punktami niejednorodnymi, wyznacza pierwszy element, który ma być dodany do listy rysowanych punktów. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Iter\+Konca} & -\/ iterator końca listy dopisywanych punktów. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Lista\+Punktow} & -\/ lista punktów do rysowania, do której ma być dopisany zbiór nazw plików zawierających punkty niejednorodne. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_ae6b9705e199ad695b61b4e902eaf0d6c}\label{lacze__do__gnuplota_8cpp_ae6b9705e199ad695b61b4e902eaf0d6c}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!DopiszUstawieniaEtykiet@{DopiszUstawieniaEtykiet}}
+\index{DopiszUstawieniaEtykiet@{DopiszUstawieniaEtykiet}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{DopiszUstawieniaEtykiet()}{DopiszUstawieniaEtykiet()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Ustawienia\+Etykiet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{std\+::string \&}]{Comm }\end{DoxyParamCaption})}
+
+
+
+Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. 
+
+Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista\+Pkt} & -\/ lista punktów, dla których mają zostać dopisane etykiety. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Comm} & -\/ polecenie, do którego dopisywane są wpisy rysowania odpowiednich etykiet. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ wpisy ryowania etykie zostały dopisane. \\
+\hline
+{\em false} & -\/ lista punktów jest pusta i wpisy nie zostały dopisane. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a7d2a85ab24d848d5c8b7bca57688df93}\label{lacze__do__gnuplota_8cpp_a7d2a85ab24d848d5c8b7bca57688df93}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& Pz\+G\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{Strm\+We,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \&}]{Wspolrz }\end{DoxyParamCaption})}
+
+
+
+Wczytuje wartości współrzędnych. 
+
+Wczytuje wartości współrzędnych. Najpierw jest czytana współrzędna {\itshape x}, a później {\itshape y}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em Strm\+We} & -\/ strumień wejściowy, na którym ma być wykonana dana operacja. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Wspolrz} & -\/ zawiera wczytane wartości współrzędnych, o ile operacja czytania powiodła się. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Strumień {\itshape Strm\+We}, który jest parametrem wejściowym. Jego stan jest zmieniony ze względu na wykonaną operację czytania. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a3927f83244df8a7245e105150a9fb3b2}\label{lacze__do__gnuplota_8cpp_a3927f83244df8a7245e105150a9fb3b2}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!UsunOstatniaNazwePliku@{UsunOstatniaNazwePliku}}
+\index{UsunOstatniaNazwePliku@{UsunOstatniaNazwePliku}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{UsunOstatniaNazwePliku()}{UsunOstatniaNazwePliku()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Usun\+Ostatnia\+Nazwe\+Pliku (\begin{DoxyParamCaption}\item[{list$<$ Info\+Pliku\+Do\+Rysowania $>$ \&}]{Lista }\end{DoxyParamCaption})}
+
+
+
+Usuwa ostatnia nazwę pliku z listy plików do rysowania. 
+
+Funkcja ma charakter pomocniczy. Usuwa ostatnią nazwę z listy nazw plików z danymi przeznaczonych do rysowania. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista} & -\/ lista plików, z której ma zostać usunięty ostatni element. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a169c311f0e0b6ffadcd44e91e749f72d}\label{lacze__do__gnuplota_8cpp_a169c311f0e0b6ffadcd44e91e749f72d}} 
+\index{lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}!WczytajListeRoznychPunktow@{WczytajListeRoznychPunktow}}
+\index{WczytajListeRoznychPunktow@{WczytajListeRoznychPunktow}!lacze\_do\_gnuplota.cpp@{lacze\_do\_gnuplota.cpp}}
+\doxysubsubsection{\texorpdfstring{WczytajListeRoznychPunktow()}{WczytajListeRoznychPunktow()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Wczytaj\+Liste\+Roznych\+Punktow (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku,  }\item[{\mbox{\hyperlink{lacze__do__gnuplota_8cpp_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{int}]{Kolor,  }\item[{int}]{Styl,  }\item[{const char $\ast$}]{s\+Etykieta }\end{DoxyParamCaption})}
+
+
+
+Wczytuje z pliku listę punktów. 
+
+Wczytuje z pliku listę punktów, które mogą się różnić rozmiarem. Dane w pliku zapisywane są w postaci tekstowej wg następującego schematu\+: \begin{DoxyVerb}    x_1  y_1  rozmiar_1
+    x_2  y_2  rozmiar_2
+     ...
+    x_n  y_n  rozmiar_n
+\end{DoxyVerb}
+ gdzie {\itshape x\+\_\+i}, {\itshape y\+\_\+i}, {\itshape rozmiar\+\_\+i} to współrzędna {\itshape x-\/owa}, {\itshape y-\/owa} oraz rozmiar {\itshape i-\/tego} punktu. Dopuszczalne jest również wstawianie komentarzy jedno liniowych. Musi się on jednak rozpoczynać od początku linii znakiem {\ttfamily \#}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nazwa\+Pliku} & -\/ nazwa pliku, z którego mają być wczytane informacje dotyczące punktów. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Lista\+Pkt} & -\/ lista punktów, do której składowane są wczytane dane o punktach. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Kolor} & -\/ numer koloru jakim ma być rysowny dany element graficzny. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Styl} & -\/ styl rysowania, np. rysowanie punktu jako kropki lub krzyżyka. \\
+\hline
+\mbox{\texttt{ in}}  & {\em s\+Etykieta} & -\/ etykietę, która może być wyświetlona razem z danym punktem.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}

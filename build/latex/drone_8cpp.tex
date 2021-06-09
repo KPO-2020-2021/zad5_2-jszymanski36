@@ -1,0 +1,53 @@
+\hypertarget{drone_8cpp}{}\doxysection{/home/jakub/\+Documents/zad5\+\_\+2-\/jszymanski36/src/drone.cpp File Reference}
+\label{drone_8cpp}\index{/home/jakub/Documents/zad5\_2-\/jszymanski36/src/drone.cpp@{/home/jakub/Documents/zad5\_2-\/jszymanski36/src/drone.cpp}}
+
+
+Definicje metod klasy Drone.  
+
+
+{\ttfamily \#include \char`\"{}../inc/drone.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../inc/matrix3x3.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{drone_8cpp_a598a3330b3c21701223ee0ca14316eca}\label{drone_8cpp_a598a3330b3c21701223ee0ca14316eca}} 
+\#define \mbox{\hyperlink{drone_8cpp_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+14159265358979323846
+\begin{DoxyCompactList}\small\item\em Liczba pi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_ace4d8e46488567608885b137c009d402}\label{drone_8cpp_ace4d8e46488567608885b137c009d402}} 
+\#define \mbox{\hyperlink{drone_8cpp_ace4d8e46488567608885b137c009d402}{F\+L\+I\+G\+H\+T\+\_\+\+I\+NC}}~2
+\begin{DoxyCompactList}\small\item\em Odległość, którą dron przelatuje za każdym kolejnym rysowaniem lotu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_a993f69504bc352b52473ea23fd8e06f1}\label{drone_8cpp_a993f69504bc352b52473ea23fd8e06f1}} 
+\#define \mbox{\hyperlink{drone_8cpp_a993f69504bc352b52473ea23fd8e06f1}{R\+O\+T\+O\+R\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+\+I\+NC}}~10
+\begin{DoxyCompactList}\small\item\em Kąt, o który obracają się rotory za każdym kolejnym rysowaniem lotu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_a72bb7169ad1b3955f49be7f607320e79}\label{drone_8cpp_a72bb7169ad1b3955f49be7f607320e79}} 
+\#define \mbox{\hyperlink{drone_8cpp_a72bb7169ad1b3955f49be7f607320e79}{D\+R\+O\+N\+E\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+\+I\+NC}}~5
+\begin{DoxyCompactList}\small\item\em Kąt, o który obraca się dron za każdym kolejnym rysowaniem lotu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_a868fe3df00c1141d6fa5e3696a7686e7}\label{drone_8cpp_a868fe3df00c1141d6fa5e3696a7686e7}} 
+\#define \mbox{\hyperlink{drone_8cpp_a868fe3df00c1141d6fa5e3696a7686e7}{B\+O\+D\+Y\+\_\+\+S\+C\+A\+LE}}~10,8,4
+\begin{DoxyCompactList}\small\item\em Skala korpusu względem wzorca (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_ae07a5abaf487d2c2553c2212f2f7e535}\label{drone_8cpp_ae07a5abaf487d2c2553c2212f2f7e535}} 
+\#define \mbox{\hyperlink{drone_8cpp_ae07a5abaf487d2c2553c2212f2f7e535}{R\+O\+T\+O\+R\+\_\+\+S\+C\+A\+LE}}~8,8,2
+\begin{DoxyCompactList}\small\item\em Skala rotoru względem wzorca (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_af5db80a9a052aa63732ef6df50fe574f}\label{drone_8cpp_af5db80a9a052aa63732ef6df50fe574f}} 
+\#define \mbox{\hyperlink{drone_8cpp_af5db80a9a052aa63732ef6df50fe574f}{B\+O\+D\+Y\+\_\+\+P\+OS}}~0,0,2
+\begin{DoxyCompactList}\small\item\em Pozycja korpusu względem drona (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_af61ccf43e1894fbe0c70c7f73f60c7fa}\label{drone_8cpp_af61ccf43e1894fbe0c70c7f73f60c7fa}} 
+\#define \mbox{\hyperlink{drone_8cpp_af61ccf43e1894fbe0c70c7f73f60c7fa}{R\+O\+T\+O\+R0\+\_\+\+P\+OS}}~5,4,5
+\begin{DoxyCompactList}\small\item\em Pozycja 1. rotoru względem drona (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_acfbafa9dcc1808f18a1399214d9dfdac}\label{drone_8cpp_acfbafa9dcc1808f18a1399214d9dfdac}} 
+\#define \mbox{\hyperlink{drone_8cpp_acfbafa9dcc1808f18a1399214d9dfdac}{R\+O\+T\+O\+R1\+\_\+\+P\+OS}}~5,-\/4,5
+\begin{DoxyCompactList}\small\item\em Pozycja 2. rotoru względem drona (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_ae2cb824c5ab7b717eb380f97f79650c3}\label{drone_8cpp_ae2cb824c5ab7b717eb380f97f79650c3}} 
+\#define \mbox{\hyperlink{drone_8cpp_ae2cb824c5ab7b717eb380f97f79650c3}{R\+O\+T\+O\+R2\+\_\+\+P\+OS}}~-\/5,4,5
+\begin{DoxyCompactList}\small\item\em Pozycja 3. rotoru względem drona (x, y, z) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{drone_8cpp_accc155f938c6df72ce542b92802deeb6}\label{drone_8cpp_accc155f938c6df72ce542b92802deeb6}} 
+\#define \mbox{\hyperlink{drone_8cpp_accc155f938c6df72ce542b92802deeb6}{R\+O\+T\+O\+R3\+\_\+\+P\+OS}}~-\/5,-\/4,5
+\begin{DoxyCompactList}\small\item\em Pozycja 4. rotoru względem drona (x, y, z) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicje metod klasy Drone. 
+

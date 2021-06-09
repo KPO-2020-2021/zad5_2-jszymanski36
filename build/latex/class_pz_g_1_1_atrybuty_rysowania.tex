@@ -1,0 +1,176 @@
+\hypertarget{class_pz_g_1_1_atrybuty_rysowania}{}\doxysection{PzG\+::Atrybuty\+Rysowania Class Reference}
+\label{class_pz_g_1_1_atrybuty_rysowania}\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+
+
+Modeluje zestaw informacji będący atrybutami rysowania.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_aeae8811cf8c6eef100fdae0322b8f650}{operator$<$}} (const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&Atryb) const
+\begin{DoxyCompactList}\small\item\em Porównuje wszystkie pola atrybutów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_ae04bb7af0a1cc5fe885373f2b1271ee4}{operator==}} (const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&Atryb) const
+\begin{DoxyCompactList}\small\item\em Porównuje wszystkie pola. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_a85f1665049d64618e1ac1d18c000ff76}{Wez\+Styl}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia styl rysowania. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_a27e26e90c6e5ccf76188e16fb81b2644}{Wez\+Kolor}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia kolor rysowania. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_a9f0f08bb69dca9c12e7f55c165c6223e}{Wez\+Rozmiar}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia rozmiar rysowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_a2ac97706124b14072715ecf3f07e82b4}{Zmien\+Styl}} (int Styl)
+\begin{DoxyCompactList}\small\item\em Zmienia styl rysowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_ab068535b4d2f755c394557d1da72a4eb}{Zmien\+Kolor}} (int Kolor)
+\begin{DoxyCompactList}\small\item\em Zmienia kolor rysowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania_af4b140eb03bc10b6fd816fad63f8372e}{Zmien\+Rozmiar}} (int Rozmiar)
+\begin{DoxyCompactList}\small\item\em Zmienia rozmiar rysowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Modeluje zestaw informacji będący atrybutami rysowania. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_aeae8811cf8c6eef100fdae0322b8f650}\label{class_pz_g_1_1_atrybuty_rysowania_aeae8811cf8c6eef100fdae0322b8f650}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Atrybuty\+Rysowania\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&}]{Atryb }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Porównuje wszystkie pola atrybutów. 
+
+Porównuje dwa atrybuty względem wszystkich pól w następującej kolejności\+: rozmiar, kolor i styl. Przy sortowaniu pozwala to zgrupować obok siebie te elementy, które mają takie same wartości pól. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Atryb} & -\/ obiekt, które pola \mbox{\hyperlink{}{\+\_\+\+Rozmiar}}, \mbox{\hyperlink{}{\+\_\+\+Kolor}} oraz mają \mbox{\hyperlink{}{\+\_\+\+Styl}} mają zostać porównane z analogicznymi polami obiektu {\ttfamily $\ast$this}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ jeśli dla któregoś z wykonywanych porównań w następującej kolejności\+: \mbox{\hyperlink{}{\+\_\+\+Rozmiar}}, \mbox{\hyperlink{}{\+\_\+\+Kolor}}, \mbox{\hyperlink{}{\+\_\+\+Styl}}; będzie prawdziwa relacja mniejszości w sensie wartości liczbowych. Jeśli ta relacja nie zachodzi dla pierwszego pola, to dla drugiego uznaje się, że jest spełniona pod warunkiem, że dla wartości dwóch pierwszych pól są równe. \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_ae04bb7af0a1cc5fe885373f2b1271ee4}\label{class_pz_g_1_1_atrybuty_rysowania_ae04bb7af0a1cc5fe885373f2b1271ee4}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!operator==@{operator==}}
+\index{operator==@{operator==}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Atrybuty\+Rysowania\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&}]{Atryb }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Porównuje wszystkie pola. 
+
+Porównuje wszystkie pola. Równość zachodzi wtedy, gdy wartości wszystkich pól są takie same. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Atryb} & -\/ obiekt, z którym dokonane zostanie prównanie. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ wartości wszystkich atrybutów są równe. \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_a27e26e90c6e5ccf76188e16fb81b2644}\label{class_pz_g_1_1_atrybuty_rysowania_a27e26e90c6e5ccf76188e16fb81b2644}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!WezKolor@{WezKolor}}
+\index{WezKolor@{WezKolor}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{WezKolor()}{WezKolor()}}
+{\footnotesize\ttfamily int Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Wez\+Kolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia kolor rysowania. 
+
+Udostępnia wartość parametru określającego kolor rysowania danego elementu graficznego (tzn. linii lub punktu). \begin{DoxyReturn}{Returns}
+Przechowywana wartość koloru. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_a9f0f08bb69dca9c12e7f55c165c6223e}\label{class_pz_g_1_1_atrybuty_rysowania_a9f0f08bb69dca9c12e7f55c165c6223e}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!WezRozmiar@{WezRozmiar}}
+\index{WezRozmiar@{WezRozmiar}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{WezRozmiar()}{WezRozmiar()}}
+{\footnotesize\ttfamily int Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Wez\+Rozmiar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia rozmiar rysowania. 
+
+Udostępnia wartość parametru określającego rozmiar rysowanego danego elementu graficznego. W przypadku linii jest to jej grubość, zaś w przypdku punktu rozmiar okręgu. \begin{DoxyReturn}{Returns}
+Przechowywana wartość rozmiaru. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_a85f1665049d64618e1ac1d18c000ff76}\label{class_pz_g_1_1_atrybuty_rysowania_a85f1665049d64618e1ac1d18c000ff76}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!WezStyl@{WezStyl}}
+\index{WezStyl@{WezStyl}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{WezStyl()}{WezStyl()}}
+{\footnotesize\ttfamily int Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Wez\+Styl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia styl rysowania. 
+
+Udostępnia wartość parametru określającego styl rysowania danego elementu graficznego (tzn. linii lub punktu). \begin{DoxyReturn}{Returns}
+Przechowywana wartość definiująca styl rysowania. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_ab068535b4d2f755c394557d1da72a4eb}\label{class_pz_g_1_1_atrybuty_rysowania_ab068535b4d2f755c394557d1da72a4eb}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!ZmienKolor@{ZmienKolor}}
+\index{ZmienKolor@{ZmienKolor}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{ZmienKolor()}{ZmienKolor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}\& Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Zmien\+Kolor (\begin{DoxyParamCaption}\item[{int}]{Kolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmienia kolor rysowania. 
+
+Zmienia parametr determinujący kolor rysowania obiektu graficznego. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Kolor} & -\/ nowa wartość określająca nowy kolor rysowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referacja do zmodyfikowanego obiektu {\ttfamily $\ast$this}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_af4b140eb03bc10b6fd816fad63f8372e}\label{class_pz_g_1_1_atrybuty_rysowania_af4b140eb03bc10b6fd816fad63f8372e}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!ZmienRozmiar@{ZmienRozmiar}}
+\index{ZmienRozmiar@{ZmienRozmiar}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{ZmienRozmiar()}{ZmienRozmiar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}\& Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Zmien\+Rozmiar (\begin{DoxyParamCaption}\item[{int}]{Rozmiar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmienia rozmiar rysowania. 
+
+Zmienia parametr determinujący rozmiar rysowania obiektu graficznego. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Rozmiar} & -\/ nowa wartość dla rysowanych elementów graficznych, np. punktów. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referacja do zmodyfikowanego obiektu {\ttfamily $\ast$this}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_atrybuty_rysowania_a2ac97706124b14072715ecf3f07e82b4}\label{class_pz_g_1_1_atrybuty_rysowania_a2ac97706124b14072715ecf3f07e82b4}} 
+\index{PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}!ZmienStyl@{ZmienStyl}}
+\index{ZmienStyl@{ZmienStyl}!PzG::AtrybutyRysowania@{PzG::AtrybutyRysowania}}
+\doxysubsubsection{\texorpdfstring{ZmienStyl()}{ZmienStyl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}\& Pz\+G\+::\+Atrybuty\+Rysowania\+::\+Zmien\+Styl (\begin{DoxyParamCaption}\item[{int}]{Styl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmienia styl rysowania. 
+
+Zmienia parametr determinujący styl rysowania obiektu graficznego. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Styl} & -\/ wartość identyfikująca nowy styl rysowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do zmodyfikowanego obiektu {\ttfamily $\ast$this}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jakub/\+Documents/zad5\+\_\+2-\/jszymanski36/src/\mbox{\hyperlink{lacze__do__gnuplota_8cpp}{lacze\+\_\+do\+\_\+gnuplota.\+cpp}}\end{DoxyCompactItemize}

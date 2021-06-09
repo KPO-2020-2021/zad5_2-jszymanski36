@@ -1,3 +1,8 @@
+/*!
+* \file 
+* \brief Definicje metod klasy SceneObject
+*/
+
 #include "../inc/scene_object.hh"
 #include "../inc/slope.hh"
 #include "../inc/peak.hh"
@@ -5,6 +10,9 @@
 #include "../inc/drone.hh"
 #include <fstream> 
 
+/*! 
+* Obliczanie i wpisanie do odpowiedniego pliku globalnych współrzędnych obiektu sceny, na podstawie jego lokalnych współrzędnych i innych parametrów
+*/
 void SceneObject::CalcGlobalCoords(){
 
   std::ifstream local(TakeFileName_LocalCoords());
@@ -25,11 +33,5 @@ void SceneObject::CalcGlobalCoords(){
   }
 }
 
-/* SceneObject::~SceneObject(){
-  if(ReturnType() != "Dron"){
-    remove(TakeFileName_LocalCoords().c_str());
-    remove(TakeFileName_GlobalCoords().c_str());
-  }
-  std::cout << "a" << std::endl;
-} */
+
 

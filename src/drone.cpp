@@ -228,9 +228,8 @@ void Drone::Rotate(double degrees, PzG::LaczeDoGNUPlota &Lacze){
   }
 }
 
-/*! Obliczanie i wpisanie do odpowiedniego pliku globalnych współrzędnych drona, na podstawie jego lokalnych współrzędnych i innych parametrów
-*
-* \return 1 jeśli zostało to wykonane bez problemów, w przeciwnym razie 0
+/*! 
+* Obliczanie i wpisanie do odpowiedniego pliku globalnych współrzędnych drona, na podstawie jego lokalnych współrzędnych i innych parametrów
 */
 void Drone::CalcDroneGlobalCoords() const{
 

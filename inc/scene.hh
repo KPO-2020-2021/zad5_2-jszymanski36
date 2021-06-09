@@ -29,10 +29,12 @@ class Scene: Drone {
     */
     unsigned int ActiveDrone;
 
+    /*!
+    * \brief Lista wszystkich obiektów sceny (drony oraz przeszkody)
+    */
     std::list<std::shared_ptr<SceneObject>> ObjectList;
 
   public: 
-
 
     /*!
     * \brief Dodaj nowego drona do sceny
@@ -59,11 +61,23 @@ class Scene: Drone {
     */
     int ReturnAtiveDroneNum() {return ActiveDrone;};
 
-    void AddObject(Vector3D scale, double pos_x, double pos_y, int type, PzG::LaczeDoGNUPlota &Lacze);
+    /*!
+    * \brief Dodaj nową przeszkodę na powierzchni
+    */
+    void AddObject(Vector3D scale, double pos_x, double pos_y, double angle, int type, PzG::LaczeDoGNUPlota &Lacze);
 
+    /*!
+    * \brief Usun daną przeszkodę z powierzchni
+    */
     void DeleteObject(int index, PzG::LaczeDoGNUPlota &Lacze);
 
+    /*!
+    * \brief Wyświetl listę wszystkich przeszkód
+    */
     bool PrintObjects();
 
+    /*!
+    * \brief Dekonstruktor usuwa wszystkie przeszkody
+    */
     ~Scene();
 };

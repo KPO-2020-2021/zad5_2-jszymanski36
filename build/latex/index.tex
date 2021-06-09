@@ -1,0 +1,58 @@
+ \hypertarget{index_autotoc_md0}{}\doxysubsection{Building}\label{index_autotoc_md0}
+Build by making a build directory (i.\+e. {\ttfamily build/}), run {\ttfamily cmake} in that dir, and then use {\ttfamily make} to build the desired target.
+
+Requirements\+: cmake, gnuplot, doxygen + dot (in graphviz library)
+
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{> mkdir build \&\& cd build}
+\DoxyCodeLine{> cmake .. \#\#\#\# options: -\/DCMAKE\_BUILD\_TYPE=[Debug | Coverage | Release], Debug is default}
+\DoxyCodeLine{> make     \#\#\#\# compilation}
+\DoxyCodeLine{> ./main   \#\#\#\# main() from app}
+\DoxyCodeLine{> make test      \#\#\#\# Compile the tests}
+\DoxyCodeLine{> ./unit\_tests -\/s   \#\#\#\# Start the tests, -\/s flag -\/ full description of each case}
+\DoxyCodeLine{> make fulltest \#\#\#\# alternative for above, compile \& run tests with full decription}
+\DoxyCodeLine{> make coverage  \#\#\#\# Generate a coverage report}
+\DoxyCodeLine{> make doc       \#\#\#\# Generate html documentation}
+\end{DoxyCode}
+
+
+Things to remember\+:
+\begin{DoxyItemize}
+\item changes to C\+Make\+Lists.\+txt in the main folder with new files added, i.\+e.\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\# -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#                         Locate files (change as needed).}}
+\DoxyCodeLine{\textcolor{preprocessor}{\# -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{set(SOURCES          \# All .cpp files in src/}
+\DoxyCodeLine{    src/lacze\_do\_gnuplota}
+\DoxyCodeLine{    src/Matrix2x2.cpp}
+\DoxyCodeLine{    src/Rectangle .cpp}
+\DoxyCodeLine{    src/Vector2D.cpp \# etc.}
+\DoxyCodeLine{)}
+\DoxyCodeLine{set(TESTFILES        \textcolor{preprocessor}{\# All .cpp files in tests/}}
+\DoxyCodeLine{    Vector2D.cpp}
+\DoxyCodeLine{    Matrix2x2.cpp}
+\DoxyCodeLine{    Rectangle.cpp \# etc.}
+\DoxyCodeLine{)}
+\DoxyCodeLine{set(LIBRARY\_NAME zadX)  \textcolor{preprocessor}{\# Default name for the library built from src}\textcolor{comment}{/*.cpp (change if you wish)}}
+\end{DoxyCode}
+
+\item changes to tests/\+C\+Make\+Lists.\+txt (in tests subfolder) with new files added, i.\+e.\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\# List all files containing tests. (Change as needed)}}
+\DoxyCodeLine{set(TESTFILES        \# All .cpp files in tests/}
+\DoxyCodeLine{    main.cpp}
+\DoxyCodeLine{    test\_Wektor2D.cpp}
+\DoxyCodeLine{    test\_Macierz2x2.cpp}
+\DoxyCodeLine{    test\_Prostokat.cpp \# etc.}
+\DoxyCodeLine{)}
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+The {\ttfamily main.\+cpp} in the folder {\ttfamily tests} is needed. Only there we define {\ttfamily \#define D\+O\+C\+T\+E\+S\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+W\+I\+T\+H\+\_\+\+M\+A\+IN}.
+
+The main loop of the program is in the {\ttfamily app} folder. 

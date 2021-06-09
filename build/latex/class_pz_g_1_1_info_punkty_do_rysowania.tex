@@ -1,0 +1,239 @@
+\hypertarget{class_pz_g_1_1_info_punkty_do_rysowania}{}\doxysection{PzG\+::Info\+Punkty\+Do\+Rysowania Class Reference}
+\label{class_pz_g_1_1_info_punkty_do_rysowania}\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+
+
+Modeluje zestaw informacji o rysowanych punktach.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_aed0725576cd5cf0ac01fc2e528e2c85b}{Info\+Punkty\+Do\+Rysowania}} (const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \&Wspolrz, const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&Atryb, const char $\ast$s\+Etykieta)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje obiekt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_aee45bb223dcbb35b32934eba41a723c6}{Ustaw\+Wspolrz\+Etykiety\+Dla\+Przesuniecia}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Wpisuje nowe współrzędne. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a385228b5ac60713d115d37d267524ec3}{Wez\+Etykiete}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia etykietę danego punktu. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a8903b837a2c97c8aede88324d316ac6e}{Wez\+Wspolrz\+Etykiety}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia wspólrzędne etykiety. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_acc9f21bca0c987c540783d3bedcbd33a}{operator$<$}} (const \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \&Info) const
+\begin{DoxyCompactList}\small\item\em Porównuje tylko wg atrbutów. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a7639b8891f0f7975451b4d675ff7cb31}{Wez\+Atrybuty}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia atrybuty rysowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a93c59d4f6fa5687ceef68db7c832c10a}{Otworz\+Atrybuty}} ()
+\begin{DoxyCompactList}\small\item\em Udostępnia atrybuty do zmiany. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_ae84e4bfa68f132661ff90dac48d83e8c}{Wez\+Wspolrz}} () const
+\begin{DoxyCompactList}\small\item\em Udostępnia współrzędne rysowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a9a367a5b7977f3d16f2466a4d5f89a8a}{Otworz\+Wspolrz}} ()
+\begin{DoxyCompactList}\small\item\em Udostępnia współrzędne do zmiany. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_a94340d4c219b5469f79cd70cb1638aa3}{Dodaj\+Do\+Etykiety}} (int Num)
+\begin{DoxyCompactList}\small\item\em Dopisuje do etykiety numer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_aea85f2f3149e375b4c89daad67ccd28e}{Zmien\+Przes\+Etykiety\+\_\+\+Wzg\+Wspo\+Punktu}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Zmienia współrzędne etykiety względem współrzędnych punktu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \& \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania_af2b7bd8684f0b4a4b5465c16e0fe6c71}{Zmien\+Przes\+Etykiety\+\_\+\+Wzg\+Rozm\+Punktu}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Zmienia współrzędne etykiety względem rozmiaru punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Modeluje zestaw informacji o rysowanych punktach. 
+
+Klasa ma charakter pomocniczy i modeluje zestaw informacji o punktach, które mają być rysowane. Informacje te określają styl rysowania punktu, kolor oraz jego rozmiar, jak też współrzędne tego punktu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_aed0725576cd5cf0ac01fc2e528e2c85b}\label{class_pz_g_1_1_info_punkty_do_rysowania_aed0725576cd5cf0ac01fc2e528e2c85b}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!InfoPunktyDoRysowania@{InfoPunktyDoRysowania}}
+\index{InfoPunktyDoRysowania@{InfoPunktyDoRysowania}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{InfoPunktyDoRysowania()}{InfoPunktyDoRysowania()}}
+{\footnotesize\ttfamily Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Info\+Punkty\+Do\+Rysowania (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \&}]{Wspolrz,  }\item[{const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}} \&}]{Atryb,  }\item[{const char $\ast$}]{s\+Etykieta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje obiekt. 
+
+Inicjalizuje obiekt determinując współrzędne rysowanego punktu, atrybuty jego rysowania, oraz treść etykiety. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Wspolrz} & -\/ współrzędne rysowanego punktu, \\
+\hline
+\mbox{\texttt{ in}}  & {\em Atryb} & -\/ atrybuty rysowania, \\
+\hline
+\mbox{\texttt{ in}}  & {\em s\+Etykieta} & -\/ treść etykiety. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a94340d4c219b5469f79cd70cb1638aa3}\label{class_pz_g_1_1_info_punkty_do_rysowania_a94340d4c219b5469f79cd70cb1638aa3}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!DodajDoEtykiety@{DodajDoEtykiety}}
+\index{DodajDoEtykiety@{DodajDoEtykiety}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{DodajDoEtykiety()}{DodajDoEtykiety()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Dodaj\+Do\+Etykiety (\begin{DoxyParamCaption}\item[{int}]{Num }\end{DoxyParamCaption})}
+
+
+
+Dopisuje do etykiety numer. 
+
+Dopisuje do etykiety numer. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Num} & -\/ liczba, która ma być dopisana do etykiety punktu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_acc9f21bca0c987c540783d3bedcbd33a}\label{class_pz_g_1_1_info_punkty_do_rysowania_acc9f21bca0c987c540783d3bedcbd33a}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \&}]{Info }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Porównuje tylko wg atrbutów. 
+
+Prównywane są tylko i wyłacznie same atrybuty. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Info} & -\/ obiekt, które pole \mbox{\hyperlink{}{\+\_\+\+Atryb}} ma być prównane z analogicznym polem obiektu {\ttfamily $\ast$this}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik porównania zgodnie implementacją operatora \textquotesingle{}$<$\textquotesingle{} dla klasy \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a93c59d4f6fa5687ceef68db7c832c10a}\label{class_pz_g_1_1_info_punkty_do_rysowania_a93c59d4f6fa5687ceef68db7c832c10a}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!OtworzAtrybuty@{OtworzAtrybuty}}
+\index{OtworzAtrybuty@{OtworzAtrybuty}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{OtworzAtrybuty()}{OtworzAtrybuty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Otworz\+Atrybuty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia atrybuty do zmiany. 
+
+Udostępnia do zmiany atrybuty rysowania danego elementu graficznego. \begin{DoxyReturn}{Returns}
+Referancja atrybutów rysowania pozwalająca na ich modyfikację. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a9a367a5b7977f3d16f2466a4d5f89a8a}\label{class_pz_g_1_1_info_punkty_do_rysowania_a9a367a5b7977f3d16f2466a4d5f89a8a}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!OtworzWspolrz@{OtworzWspolrz}}
+\index{OtworzWspolrz@{OtworzWspolrz}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{OtworzWspolrz()}{OtworzWspolrz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}}\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Otworz\+Wspolrz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia współrzędne do zmiany. 
+
+Udostępnia do zmiany współrzędne rysowania danego elementu graficznego.
+
+\begin{DoxyReturn}{Returns}
+Referancja do współrzędnych punktu, które można modyfikować. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_aee45bb223dcbb35b32934eba41a723c6}\label{class_pz_g_1_1_info_punkty_do_rysowania_aee45bb223dcbb35b32934eba41a723c6}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!UstawWspolrzEtykietyDlaPrzesuniecia@{UstawWspolrzEtykietyDlaPrzesuniecia}}
+\index{UstawWspolrzEtykietyDlaPrzesuniecia@{UstawWspolrzEtykietyDlaPrzesuniecia}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{UstawWspolrzEtykietyDlaPrzesuniecia()}{UstawWspolrzEtykietyDlaPrzesuniecia()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Ustaw\+Wspolrz\+Etykiety\+Dla\+Przesuniecia (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wpisuje nowe współrzędne. 
+
+Wpisuje nowe współrzędne jako przesunięcie względem położenie puntku. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ nowa względna współrzędna x-\/owa etykiety, \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & -\/ nowa względna współrzędna y-\/owa etykiety. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a7639b8891f0f7975451b4d675ff7cb31}\label{class_pz_g_1_1_info_punkty_do_rysowania_a7639b8891f0f7975451b4d675ff7cb31}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!WezAtrybuty@{WezAtrybuty}}
+\index{WezAtrybuty@{WezAtrybuty}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{WezAtrybuty()}{WezAtrybuty()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Wez\+Atrybuty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia atrybuty rysowania. 
+
+Udostępnia atrybuty rysowania danego elementu graficznego. \begin{DoxyReturn}{Returns}
+Referancja atrybutów rysowania w trybie tylko do odczytu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a385228b5ac60713d115d37d267524ec3}\label{class_pz_g_1_1_info_punkty_do_rysowania_a385228b5ac60713d115d37d267524ec3}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!WezEtykiete@{WezEtykiete}}
+\index{WezEtykiete@{WezEtykiete}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{WezEtykiete()}{WezEtykiete()}}
+{\footnotesize\ttfamily const string\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Wez\+Etykiete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia etykietę danego punktu. 
+
+Udostępnia etykietę danego punktu. \begin{DoxyReturn}{Returns}
+Referencja do etykiety w trybie tylko do odczytu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_ae84e4bfa68f132661ff90dac48d83e8c}\label{class_pz_g_1_1_info_punkty_do_rysowania_ae84e4bfa68f132661ff90dac48d83e8c}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!WezWspolrz@{WezWspolrz}}
+\index{WezWspolrz@{WezWspolrz}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{WezWspolrz()}{WezWspolrz()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}}\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Wez\+Wspolrz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia współrzędne rysowania. 
+
+Udostępnia współrzędne rysowania danego elementu graficznego. \begin{DoxyReturn}{Returns}
+Referancja do współrzędnych punktu w trybie tylko do odczytu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_a8903b837a2c97c8aede88324d316ac6e}\label{class_pz_g_1_1_info_punkty_do_rysowania_a8903b837a2c97c8aede88324d316ac6e}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!WezWspolrzEtykiety@{WezWspolrzEtykiety}}
+\index{WezWspolrzEtykiety@{WezWspolrzEtykiety}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{WezWspolrzEtykiety()}{WezWspolrzEtykiety()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}}\& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Wez\+Wspolrz\+Etykiety (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Udostępnia wspólrzędne etykiety. 
+
+Udostępnia wspólrzędne etykiety. \begin{DoxyReturn}{Returns}
+Referencja do współrzędnych etykiety w trybie tylko do odczytu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_af2b7bd8684f0b4a4b5465c16e0fe6c71}\label{class_pz_g_1_1_info_punkty_do_rysowania_af2b7bd8684f0b4a4b5465c16e0fe6c71}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!ZmienPrzesEtykiety\_WzgRozmPunktu@{ZmienPrzesEtykiety\_WzgRozmPunktu}}
+\index{ZmienPrzesEtykiety\_WzgRozmPunktu@{ZmienPrzesEtykiety\_WzgRozmPunktu}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{ZmienPrzesEtykiety\_WzgRozmPunktu()}{ZmienPrzesEtykiety\_WzgRozmPunktu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Zmien\+Przes\+Etykiety\+\_\+\+Wzg\+Rozm\+Punktu (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Zmienia współrzędne etykiety względem rozmiaru punktu. 
+
+Zmienia współrzędne etykiety względem rozmiaru punktu. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ względna współrzędna x-\/owa etykiety, \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & -\/ względna współrzędna y-\/owa etykiety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Refencja do zmodyfikowanego obiektu {\ttfamily $\ast$this}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pz_g_1_1_info_punkty_do_rysowania_aea85f2f3149e375b4c89daad67ccd28e}\label{class_pz_g_1_1_info_punkty_do_rysowania_aea85f2f3149e375b4c89daad67ccd28e}} 
+\index{PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}!ZmienPrzesEtykiety\_WzgWspoPunktu@{ZmienPrzesEtykiety\_WzgWspoPunktu}}
+\index{ZmienPrzesEtykiety\_WzgWspoPunktu@{ZmienPrzesEtykiety\_WzgWspoPunktu}!PzG::InfoPunktyDoRysowania@{PzG::InfoPunktyDoRysowania}}
+\doxysubsubsection{\texorpdfstring{ZmienPrzesEtykiety\_WzgWspoPunktu()}{ZmienPrzesEtykiety\_WzgWspoPunktu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} \& Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania\+::\+Zmien\+Przes\+Etykiety\+\_\+\+Wzg\+Wspo\+Punktu (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Zmienia współrzędne etykiety względem współrzędnych punktu. 
+
+Zmienia współrzędne etykiety względem współrzędnych punktu. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & -\/ względna współrzędna x-\/owa etykiety, \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & -\/ względna współrzędna y-\/owa etykiety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Refencja do zmodyfikowanego obiektu {\ttfamily $\ast$this}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jakub/\+Documents/zad5\+\_\+2-\/jszymanski36/src/\mbox{\hyperlink{lacze__do__gnuplota_8cpp}{lacze\+\_\+do\+\_\+gnuplota.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
-
+![Class diagram](/doc/img/UML_class.jpeg)
 ## Building
 
 Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and then use `make` to build the desired target.

@@ -108,5 +108,8 @@ class Drone: public HexPrism, public SceneObject {
     */
     Vector3D ReturnPosition() {return Position;};
 
+    /*!
+    * \brief Zwróć nazwę typu obiektu sceny
+    */
     virtual std::string ReturnType() {return "Dron";};
 };
