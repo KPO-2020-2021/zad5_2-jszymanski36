@@ -92,6 +92,14 @@ math.h
 matrix.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/matrix.hh
 
+/home/jakub/Documents/zad5_2-jszymanski36/src/cuboid.cpp
+../inc/cuboid.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/cuboid.hh
+../inc/matrix3x3.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
+fstream
+-
+
 /home/jakub/Documents/zad5_2-jszymanski36/src/drone.cpp
 ../inc/drone.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/drone.hh
@@ -107,6 +115,14 @@ unistd.h
 /home/jakub/Documents/zad5_2-jszymanski36/src/flat.cpp
 ../inc/flat.hh
 /home/jakub/Documents/zad5_2-jszymanski36/inc/flat.hh
+fstream
+-
+
+/home/jakub/Documents/zad5_2-jszymanski36/src/hexprism.cpp
+../inc/hexprism.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/hexprism.hh
+../inc/matrix3x3.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
 fstream
 -
 
