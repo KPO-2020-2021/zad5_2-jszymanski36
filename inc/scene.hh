@@ -67,6 +67,11 @@ class Scene: Drone {
     void AddObject(Vector3D scale, double pos_x, double pos_y, double angle, int type, PzG::LaczeDoGNUPlota &Lacze);
 
     /*!
+    * \brief Zmien polozenie danej przeszkody
+    */
+    void MoveObject(double pos_x, double pos_y, int index);
+
+    /*!
     * \brief Usun daną przeszkodę z powierzchni
     */
     void DeleteObject(int index, PzG::LaczeDoGNUPlota &Lacze);

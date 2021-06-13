@@ -54,4 +54,9 @@ class Cuboid: public Solid {
     * \brief Zwroc pozycje prostopadloscianu
     */
     Vector3D ReturnPosition() {return Position;};
+
+    /*!
+    * \brief Zwroc orientacje prostopadloscianu
+    */
+    double ReturnOrientation() {return Orientation;};
 };

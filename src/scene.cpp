@@ -67,8 +67,25 @@ void Scene::AddObject(Vector3D scale, double pos_x, double pos_y, double angle, 
 }
 
 /*!
+* Przenieś przeszkode o danym indeksie na nowe polozenie
+* \param[in] pos_x - wspolrzedna x nowego polozenia przeszkody
+* \param[in] pos_y - wspolrzedna y nowego polozenia przeszkody
+* \param[in] index - nr przeszkody (1 = pierwsza przeszkoda w kolejności listy itd.)
+*/
+void Scene::MoveObject(double pos_x, double pos_y, int index){
+
+  std::list<std::shared_ptr<SceneObject>>::iterator it = ObjectList.begin();
+  std::advance(it, index + DroneArray.size() - 1); 
+
+  double T[SIZE] = {pos_x, pos_y, 0};
+  Vector3D Pos(T);
+  it->get()->SetPosition(Pos, it->get()->ReturnOrientation());
+  it->get()->CalcGlobalCoords(); 
+}
+
+/*!
 * Usun przeszkode ze sceny na podstawie numeru indeksu w liscie obiektów
-* \param[in] index - nr przeszkody (1 - pierwsza przeszkoda w kolejności listy itd.)
+* \param[in] index - nr przeszkody (1 = pierwsza przeszkoda w kolejności listy itd.)
 * \param[in] Lacze - lacze do rysowania w GNUPlocie
 */
 void Scene::DeleteObject(int index, PzG::LaczeDoGNUPlota &Lacze){
@@ -97,7 +114,7 @@ bool Scene::PrintObjects(){
   int j = 1;
   for(std::list<std::shared_ptr<SceneObject>>::iterator it = ObjectList.begin(); it != ObjectList.end(); ++it){
     if(it->get()->ReturnType() != "Dron"){
-      std::cout << j << "- (" << it->get()->ReturnPosition() << ") " << it->get()->ReturnType() << std::endl;
+      std::cout << j << ". Polozenie: " << it->get()->ReturnPosition() << "\tTyp:" << it->get()->ReturnType() << std::endl;
       ++j;
     }
   }

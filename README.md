@@ -1,4 +1,8 @@
 ![Class diagram](/doc/img/UML_class.jpeg)
+
+ROZSZERZENIA:
+Dodano rozszerzenia ustawiania orientacji podczas dodawania przeszkody oraz możliwość zmiany polozenia istniejacej przeszkody (nowa opcja w menu)
+
 ## Building
 
 Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and then use `make` to build the desired target.

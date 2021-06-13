@@ -85,9 +85,9 @@ Diagram współpracy dla Flat:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a2867c2bf0ae9291565ad52b2f8852386"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flat.html#a2867c2bf0ae9291565ad52b2f8852386">Flat</a> (<a class="el" href="vector3_d_8hh.html#afe9a79695fd6c7e892c27528d3ca948d">Vector3D</a> scale, double pos_x, double pos_y, std::string localfile, std::string globalfile)</td></tr>
-<tr class="memdesc:a2867c2bf0ae9291565ad52b2f8852386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor tworzenia nowego plaskowyzu z danymi parametrami.  <a href="class_flat.html#a2867c2bf0ae9291565ad52b2f8852386">Więcej...</a><br /></td></tr>
-<tr class="separator:a2867c2bf0ae9291565ad52b2f8852386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87ce4135217e4b1a4063c62bfe883e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flat.html#ab87ce4135217e4b1a4063c62bfe883e1">Flat</a> (<a class="el" href="vector3_d_8hh.html#afe9a79695fd6c7e892c27528d3ca948d">Vector3D</a> scale, double pos_x, double pos_y, double angle, std::string localfile, std::string globalfile)</td></tr>
+<tr class="memdesc:ab87ce4135217e4b1a4063c62bfe883e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor tworzenia nowego plaskowyzu z danymi parametrami.  <a href="class_flat.html#ab87ce4135217e4b1a4063c62bfe883e1">Więcej...</a><br /></td></tr>
+<tr class="separator:ab87ce4135217e4b1a4063c62bfe883e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393051807424c765d7c622d0f81a7fd4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flat.html#a393051807424c765d7c622d0f81a7fd4">ReturnType</a> () override</td></tr>
 <tr class="memdesc:a393051807424c765d7c622d0f81a7fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwroc nazwe typu obiektu sceny.  <a href="class_flat.html#a393051807424c765d7c622d0f81a7fd4">Więcej...</a><br /></td></tr>
 <tr class="separator:a393051807424c765d7c622d0f81a7fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,6 +105,9 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a849069d85f0e6f2d4ecb03b9ed1d8768 inherit pub_methods_class_cuboid"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vector3_d_8hh.html#afe9a79695fd6c7e892c27528d3ca948d">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a849069d85f0e6f2d4ecb03b9ed1d8768">ReturnPosition</a> ()</td></tr>
 <tr class="memdesc:a849069d85f0e6f2d4ecb03b9ed1d8768 inherit pub_methods_class_cuboid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwroc pozycje prostopadloscianu.  <a href="class_cuboid.html#a849069d85f0e6f2d4ecb03b9ed1d8768">Więcej...</a><br /></td></tr>
 <tr class="separator:a849069d85f0e6f2d4ecb03b9ed1d8768 inherit pub_methods_class_cuboid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c565d436b114aef1f0e06d8434dab4 inherit pub_methods_class_cuboid"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a49c565d436b114aef1f0e06d8434dab4">ReturnOrientation</a> ()</td></tr>
+<tr class="memdesc:a49c565d436b114aef1f0e06d8434dab4 inherit pub_methods_class_cuboid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwroc orientacje prostopadloscianu.  <a href="class_cuboid.html#a49c565d436b114aef1f0e06d8434dab4">Więcej...</a><br /></td></tr>
+<tr class="separator:a49c565d436b114aef1f0e06d8434dab4 inherit pub_methods_class_cuboid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_solid"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_solid')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_solid.html">Solid</a></td></tr>
 <tr class="memitem:a1c234fdc7486ab59451b816b7a187208 inherit pub_methods_class_solid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#a1c234fdc7486ab59451b816b7a187208">SetScale</a> (double x, double y, double z)</td></tr>
 <tr class="memdesc:a1c234fdc7486ab59451b816b7a187208 inherit pub_methods_class_solid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawianie wektora skali.  <a href="class_solid.html#a1c234fdc7486ab59451b816b7a187208">Więcej...</a><br /></td></tr>
@@ -139,8 +142,8 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definicja w linii <a class="el" href="flat_8hh_source.html#l00015">15</a> pliku <a class="el" href="flat_8hh_source.html">flat.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="a2867c2bf0ae9291565ad52b2f8852386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2867c2bf0ae9291565ad52b2f8852386">&#9670;&nbsp;</a></span>Flat()</h2>
+<a id="ab87ce4135217e4b1a4063c62bfe883e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87ce4135217e4b1a4063c62bfe883e1">&#9670;&nbsp;</a></span>Flat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,6 +165,12 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pos_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -197,7 +206,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flat_a2867c2bf0ae9291565ad52b2f8852386_cgraph.png" border="0" usemap="#class_flat_a2867c2bf0ae9291565ad52b2f8852386_cgraph" alt=""/></div>
+<div class="center"><img src="class_flat_ab87ce4135217e4b1a4063c62bfe883e1_cgraph.png" border="0" usemap="#class_flat_ab87ce4135217e4b1a4063c62bfe883e1_cgraph" alt=""/></div>
 </div>
 
 </div>

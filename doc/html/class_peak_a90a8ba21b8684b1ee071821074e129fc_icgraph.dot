@@ -6,5 +6,5 @@ digraph "Peak::Initiate"
   rankdir="RL";
   Node1 [label="Peak::Initiate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Tworzenie gory ze szczytem według bryły wzorcowej i skali."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Peak::Peak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_peak.html#acf8ee58742a2e46ef6cd139a8d92b548",tooltip="Konstruktor tworzenia nowej gory ze szczytem z danymi parametrami."];
+  Node2 [label="Peak::Peak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_peak.html#a594bf4b173e2aee015d72f3c6c95101c",tooltip="Konstruktor tworzenia nowej gory ze szczytem z danymi parametrami."];
 }

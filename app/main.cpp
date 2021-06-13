@@ -75,6 +75,7 @@ void PrintMenu(){
        std::cout << "p - zadaj parametry przelotu" << std::endl;
        std::cout << "d - dodaj element powierzchni" << std::endl;
        std::cout << "u - usun element powierzchni" << std::endl; 
+       std::cout << "z - zmien polozenie elementu powierzchni" << std::endl;
        std::cout << "m - wyswietl menu" << std::endl;
        std::cout << "r - wykonaj ruch po okręgu o zadanym promieniu" << std::endl << std::endl;
        std::cout << "k - koniec działania programu" << std::endl;
@@ -261,6 +262,25 @@ int main()
 
                      default:
                             std::cout << "Nieprawidłowy wybór opcji" << std::endl;
+                     break;
+
+                     case 'z':{
+                            double pos_x, pos_y;
+                            if(scene.PrintObjects()){
+                                   std::cout << std::endl << "Podaj numer elementu >";
+                                   std::cin >> index;
+
+                                   std::cout << std::endl << "Podaj nowe wspolrzedne srodka podstawy x, y." << std::endl;
+                                   std::cout << "Wprowadz wspolrzedne: x, y > ";
+                                   std::cin >> pos_x >> pos_y;
+
+                                   scene.MoveObject(pos_x, pos_y, index);
+                                   Lacze.Rysuj();
+                                   std::cout << "Element zostal przesunięty" << std::endl;
+                            } else {
+                                   std::cout << std::endl << "Brak elementów na powierzchni!" << std::endl;
+                            }
+                     }
                      break;
               }
        }
