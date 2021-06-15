@@ -28,6 +28,19 @@
 
 
 /*!
+* Dodaj danego drona do sceny (dodaje do listy dronów oraz elementów powierzchni)
+* \param[in] new_drone - dron, który będzie dodany do sceny
+*/
+void Scene::AddDrone(Drone new_drone) {
+  
+  DroneArray.push_back(new_drone); 
+  std::shared_ptr<SceneObject> tmp;
+  tmp = std::make_shared<Drone>(new_drone);
+  ObjectList.push_back(tmp);
+
+}
+
+/*!
 * Dodaj przeszkodę do sceny na podstawie parametrów geometrycznych i numeru typu
 * \param[in] scale - Wektor skalowania wielkości przeszkody w trzech wymiarach
 * \param[in] pos_x - Wspolrzedna x polozenia przeszkody

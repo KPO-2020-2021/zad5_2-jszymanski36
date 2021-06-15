@@ -16,10 +16,6 @@ iostream
 cstdlib
 -
 
-/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
-vector3D.hh
-/home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh
-
 /home/jakub/Documents/zad5_2-jszymanski36/inc/size.hh
 
 /home/jakub/Documents/zad5_2-jszymanski36/inc/vector.hh
@@ -118,11 +114,11 @@ sys/time.h
 unistd.h
 -
 
-/home/jakub/Documents/zad5_2-jszymanski36/tests/test_matrix3x3.cpp
+/home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp
 ../tests/doctest/doctest.h
 /home/jakub/Documents/zad5_2-jszymanski36/tests/doctest/doctest.h
-../inc/matrix3x3.hh
-/home/jakub/Documents/zad5_2-jszymanski36/inc/matrix3x3.hh
+../inc/vector3D.hh
+/home/jakub/Documents/zad5_2-jszymanski36/inc/vector3D.hh
 iostream
 -
 sstream

@@ -70,9 +70,51 @@ tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.s"
 	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/tests/test_matrix3x3.cpp -o CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.s
 
+tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.o: ../tests/test_cuboid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.o"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/unit_tests.dir/test_cuboid.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp
+
+tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test_cuboid.cpp.i"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp > CMakeFiles/unit_tests.dir/test_cuboid.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test_cuboid.cpp.s"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp -o CMakeFiles/unit_tests.dir/test_cuboid.cpp.s
+
+tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.o: ../tests/test_hexprism.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.o"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/unit_tests.dir/test_hexprism.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp
+
+tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test_hexprism.cpp.i"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp > CMakeFiles/unit_tests.dir/test_hexprism.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test_hexprism.cpp.s"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp -o CMakeFiles/unit_tests.dir/test_hexprism.cpp.s
+
+tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o: ../tests/test_vector3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/unit_tests.dir/test_vector3D.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp
+
+tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test_vector3D.cpp.i"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp > CMakeFiles/unit_tests.dir/test_vector3D.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test_vector3D.cpp.s"
+	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp -o CMakeFiles/unit_tests.dir/test_vector3D.cpp.s
+
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
-"CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o"
+"CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o" \
+"CMakeFiles/unit_tests.dir/test_cuboid.cpp.o" \
+"CMakeFiles/unit_tests.dir/test_hexprism.cpp.o" \
+"CMakeFiles/unit_tests.dir/test_vector3D.cpp.o"
 
 # External object files for target unit_tests
 unit_tests_EXTERNAL_OBJECTS = \
@@ -89,6 +131,9 @@ unit_tests_EXTERNAL_OBJECTS = \
 "/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles/program.dir/src/flat.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o
+unit_tests: tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.o
+unit_tests: tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.o
+unit_tests: tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o
 unit_tests: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 unit_tests: CMakeFiles/program.dir/src/cuboid.cpp.o
 unit_tests: CMakeFiles/program.dir/src/drone.cpp.o
@@ -102,7 +147,7 @@ unit_tests: CMakeFiles/program.dir/src/slope.cpp.o
 unit_tests: CMakeFiles/program.dir/src/flat.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jakub/Documents/zad5_2-jszymanski36/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../unit_tests"
 	cd /home/jakub/Documents/zad5_2-jszymanski36/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

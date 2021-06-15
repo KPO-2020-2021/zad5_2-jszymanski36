@@ -39,7 +39,7 @@ class Scene: Drone {
     /*!
     * \brief Dodaj nowego drona do sceny
     */
-    void AddDrone(Drone new_drone) {DroneArray.push_back(new_drone); ObjectList.push_back(std::make_shared<Drone> (new_drone));};
+    void AddDrone(Drone new_drone);
 
     /*!
     * \brief Zwróć wskaźnik na drona, który jest obecnie aktywny

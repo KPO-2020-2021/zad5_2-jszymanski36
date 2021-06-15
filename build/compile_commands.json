@@ -63,5 +63,20 @@
   "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build/tests",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_matrix3x3.cpp",
   "file": "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_matrix3x3.cpp"
+},
+{
+  "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/test_cuboid.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp",
+  "file": "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp"
+},
+{
+  "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/test_hexprism.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp",
+  "file": "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp"
+},
+{
+  "directory": "/home/jakub/Documents/zad5_2-jszymanski36/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jakub/Documents/zad5_2-jszymanski36/build -I/home/jakub/Documents/zad5_2-jszymanski36/inc -I/home/jakub/Documents/zad5_2-jszymanski36/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/test_vector3D.cpp.o -c /home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp",
+  "file": "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp"
 }
 ]

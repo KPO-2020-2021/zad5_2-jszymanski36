@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_cuboid.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/tests/CMakeFiles/unit_tests.dir/test_cuboid.cpp.o"
+  "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_hexprism.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/tests/CMakeFiles/unit_tests.dir/test_hexprism.cpp.o"
   "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_matrix3x3.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o"
+  "/home/jakub/Documents/zad5_2-jszymanski36/tests/test_vector3D.cpp" "/home/jakub/Documents/zad5_2-jszymanski36/build/tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
