@@ -150,7 +150,7 @@ int main()
   Lacze.UstawRotacjeXZ(64,65); 
   Lacze.Rysuj();
 
-       std::cout << "Położenie drona aktywnego: " << (*dronePtr).ReturnPosition();
+       std::cout << "Położenie drona aktywnego: " << dronePtr->ReturnPosition();
        std::cout << std::endl;
        PrintMenu();
 
@@ -174,7 +174,7 @@ int main()
                             std::cin >> i;
                             scene.ChooseActiveDrone(i);
                             dronePtr = scene.GetActiveDrone();
-                            std::cout << std::endl << "Polozenie drona aktywnego: " << (*dronePtr).ReturnPosition();
+                            std::cout << std::endl << "Polozenie drona aktywnego: " << dronePtr->ReturnPosition();
 
                      break;
                      }
@@ -185,18 +185,18 @@ int main()
                             std::cout  << "Podaj długość lotu > ";
                             std::cin >> distance;
                             std::cout << std::endl << "Rysuje zaplanowana sciezke lotu ..." << std::endl;
-                            (*dronePtr).PlanPath(angle, distance, Path);
+                            dronePtr->PlanPath(angle, distance, Path);
                             WritePathToFile(Path, PLIK_TRASY_PRZELOTU);
                             Lacze.DodajNazwePliku(PLIK_TRASY_PRZELOTU);
 
                             std::cout << "Realizacja przelotu ..." << std::endl;
-                            (*dronePtr).VerticalFlight(80, Lacze);
-                            (*dronePtr).Rotate(angle, Lacze);
-                            (*dronePtr).HorizontalFlight(distance, Lacze);
-                            (*dronePtr).VerticalFlight(-80, Lacze);
+                            dronePtr->VerticalFlight(80, Lacze);
+                            dronePtr->Rotate(angle, Lacze);
+                            dronePtr->HorizontalFlight(distance, Lacze);
+                            dronePtr->VerticalFlight(-80, Lacze);
 
                             std::cout << "Dron wyladował ..." << std::endl << std::endl;
-                            std::cout << "Polozenie drona aktywnego: " << (*dronePtr).ReturnPosition();
+                            std::cout << "Polozenie drona aktywnego: " << dronePtr->ReturnPosition();
 
                             Lacze.UsunNazwePliku(PLIK_TRASY_PRZELOTU);
                             Lacze.Rysuj();
@@ -214,10 +214,10 @@ int main()
                             std::cout << "Podaj promień okręgu: > ";
                             std::cin >> distance;
                             std::cout << std::endl << "Realizacja przelotu ..." << std::endl;
-                            (*dronePtr).GoAround(distance, Lacze);
+                            dronePtr->GoAround(distance, Lacze);
                             
                             std::cout << "Dron wylądował ..." << std::endl << std::endl;
-                            std::cout << "Polozenie drona aktywnego: " << (*dronePtr).ReturnPosition();
+                            std::cout << "Polozenie drona aktywnego: " << dronePtr->ReturnPosition();
                      break;
 
                      case 'd':{
@@ -282,6 +282,7 @@ int main()
                             }
                      }
                      break;
+
               }
        }
        return 0;
